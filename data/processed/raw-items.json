@@ -1,0 +1,420 @@
+[
+  {
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "title": "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents",
+    "summary": "In long-horizon tasks, decision-relevant state is often scattered across an expanding trajectory, while the action agent must surface it and act. As trajectories grow, task requirements, environment facts, prior attempts, diagnoses, and open subgoals can be buried in the context window or pushed beyond it, failing to influence decisions when needed. We call this failure mode \"behavioral state decay\". We study memory as an active intervention mechanism rather than passive retrieval. A separate me",
+    "url": "https://huggingface.co/papers/2607.08716",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "In long-horizon tasks, decision-relevant state is often scattered across an expanding trajectory, while the action agent must surface it and act. As trajectories grow, task requirements, environment facts, prior attempts, diagnoses, and open subgoals can be buried in the context window or pushed beyond it, failing to influence decisions when needed. We call this failure mode \"behavioral state decay\". We study memory as an active intervention mechanism rather than passive retrieval. A separate memory agent runs alongside an unmodified action agent, updating a structured memory bank from the recent trajectory and deciding whether to inject a memory-grounded reminder or remain silent. The module is plug-and-play with frontier action agents and existing agent harnesses. Across Terminal-Bench 2.0 and τ^2-Bench, it improves pass@1 for both weaker and stronger action agents, with gains of +8.3 pp on Terminal-Bench and +6.8 pp on τ^2-Bench. Ablations show that selective intervention outperforms passive bank exposure, always-on injection, advisor-only guidance, and general retrieval. As an early step toward open-weight memory policies, we train Qwen3.5-27B on SETA using SFT and GRPO, improving validation reward and achieving partial transfer to Terminal-Bench.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Yifan Wu",
+        "Lizhu Zhang",
+        "Yuhang Zhou",
+        "Mingyi Wang",
+        "Bo Peng"
+      ],
+      "paperId": "2607.08716"
+    }
+  },
+  {
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "title": "PAST-TIDE: Prototype-Anchored Statement Tuning with Topic-Invariant Normalization for Stance Detection",
+    "summary": "We introduce PAST-TIDE, our stance detection system addressing both subtasks of the StanceNakba Shared Task at NakbaNLP@LREC-COLING 2026. The main idea is statement tuning. We redefine stance as cloze-style masked language modeling (MLM), letting a verbalizer map label words to stance categories through the pre-trained MLM head rather than appending a randomly initialized classification head. We complement this with prototypical contrastive learning, which uses learnable class prototypes for bat",
+    "url": "https://huggingface.co/papers/2607.04690",
+    "publishedAt": "2026-07-06T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "We introduce PAST-TIDE, our stance detection system addressing both subtasks of the StanceNakba Shared Task at NakbaNLP@LREC-COLING 2026. The main idea is statement tuning. We redefine stance as cloze-style masked language modeling (MLM), letting a verbalizer map label words to stance categories through the pre-trained MLM head rather than appending a randomly initialized classification head. We complement this with prototypical contrastive learning, which uses learnable class prototypes for batch-size independent contrastive training, and topic-conditional layer normalization for cross-topic Arabic stance detection. PAST-TIDE achieves macro-F1 scores of 0.75 for Subtask A and 0.74 for Subtask B on the official leaderboard, indicating that minimal architectural additions to a pre-trained model can remain competitive in low-resource settings.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Md. Shakhoyat Rahman Shujon",
+        "MD Jahid Hasan Jim",
+        "Md. Milon Islam",
+        "Md Rezwanul Haque",
+        "Fakhri Karray"
+      ],
+      "paperId": "2607.04690"
+    }
+  },
+  {
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "title": "SAM-MT: Real-Time Interactive Multi-Target Video Segmentation",
+    "summary": "Modern Video Object Segmentation (VOS) involves tracking and segmenting user-specified targets. While recent approaches have achieved remarkable performance in single-target scenarios, extending them to multi-target settings typically involves replicating the single-target processing for each individual object, resulting in reduced frame rates (FPS) with unbounded latency as target count increases. Built upon Segment Anything 2 (SAM2), we propose SAM-MT, which addresses this by transforming the ",
+    "url": "https://huggingface.co/papers/2607.08688",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "Modern Video Object Segmentation (VOS) involves tracking and segmenting user-specified targets. While recent approaches have achieved remarkable performance in single-target scenarios, extending them to multi-target settings typically involves replicating the single-target processing for each individual object, resulting in reduced frame rates (FPS) with unbounded latency as target count increases. Built upon Segment Anything 2 (SAM2), we propose SAM-MT, which addresses this by transforming the model into an interactive framework for real-time Multi-Target video segmentation. SAM-MT uses explicit queries to represent different individual targets, in parallel with a shared representation for global context. It employs decoupled masked attention to keep individual identities distinct from cross-target interference, and sparse memory for stable temporal evolution, along with specialized strategies for occlusion handling and overlap prevention. SAM-MT successfully decouples latency from the number of targets, achieving real-time speed on par with single-target baselines (>36 FPS for 10 targets) while maintaining SAM2's robust video segmentation performance.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Ruiqi Shen",
+        "Chang Liu",
+        "Henghui Ding"
+      ],
+      "paperId": "2607.08688"
+    }
+  },
+  {
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "title": "A Sparse and Truncated State Vector Simulator for Peaked Circuits",
+    "summary": "In a class of quantum circuits known as peaked circuits, the goal is to predict the most probable bit string at the output of the circuit. Since these circuits are designed to have a sharp peak in their output distribution, in principle it should be possible to simulate them using a truncated state vector with a limited number of terms, or a fraction of the total probability mass. This approximate simulation can be carried out on a classical computer with a sparse representation that stores only",
+    "url": "https://huggingface.co/papers/2607.07816",
+    "publishedAt": "2026-07-08T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "In a class of quantum circuits known as peaked circuits, the goal is to predict the most probable bit string at the output of the circuit. Since these circuits are designed to have a sharp peak in their output distribution, in principle it should be possible to simulate them using a truncated state vector with a limited number of terms, or a fraction of the total probability mass. This approximate simulation can be carried out on a classical computer with a sparse representation that stores only the nonzero amplitudes of the state vector, in contrast to the dense representations that are common in most quantum simulators. For efficiency, all operations on the state vector should be vectorized to the furthest possible extent and, if available, hardware acceleration can also be used. This work describes how these requirements were met in an open-source implementation, and discusses its performance and limitations.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Diogo R. Ferreira"
+      ],
+      "paperId": "2607.07816"
+    }
+  },
+  {
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing",
+    "summary": "Self-attention lets each token retrieve information from the full context, but its quadratic cost in sequence length limits training and inference at long context. This paper presents a comparative study of softmax attention and four recent recurrent linear-attention architectures: DeltaNet, Gated DeltaNet, Kimi Delta Attention, and Gated DeltaNet-2. We express these mechanisms in a common recurrent-memory notation, making explicit how they differ in expressivity, memory decay, erase and write c",
+    "url": "https://huggingface.co/papers/2607.07953",
+    "publishedAt": "2026-07-08T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "Self-attention lets each token retrieve information from the full context, but its quadratic cost in sequence length limits training and inference at long context. This paper presents a comparative study of softmax attention and four recent recurrent linear-attention architectures: DeltaNet, Gated DeltaNet, Kimi Delta Attention, and Gated DeltaNet-2. We express these mechanisms in a common recurrent-memory notation, making explicit how they differ in expressivity, memory decay, erase and write control, training throughput, and implementation complexity. Our experiments center on 350M-parameter models trained for 15B tokens, and include optimizer and learning-rate comparisons, hybrid-versus-pure stack comparisons, sequence-length runtime measurements, larger DeltaNet runs at 1.3B and 3B parameters, and a small set of downstream evaluations. The reported speed results measure training throughput and iteration time; we do not provide an empirical inference-speed benchmark. Within the reported 350M-parameter, 15B-token sweep, Kimi Delta Attention with Muon reaches the lowest final validation loss, a pure Gated DeltaNet stack trained with AdamW has the highest normalized training throughput, hybrid stacks generally improve loss at a throughput cost, and Muon consistently lowers final validation loss relative to AdamW in the matched architecture settings we evaluate. We introduce and evaluate lightweight cross-layer routing mechanisms for DeltaNet-style memories. The most natural DeltaNet-inspired formulation, forwarding a lower layer's delta-rule write error into the next layer's value target, does not improve over matched baselines. Routing into the aligned hidden stream and forwarding the write value instead yields a modest improvement in the matched runs we report: Cross-Layer Value Routing (CLVR) lowers final validation loss for both DeltaNet and Gated DeltaNet.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Tommaso Cerruti",
+        "Tim Rieder",
+        "George Rowlands",
+        "Lingfeng Jin",
+        "Imanol Schlag"
+      ],
+      "paperId": "2607.07953"
+    }
+  },
+  {
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+    "summary": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+    "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+    "publishedAt": "2026-07-11T14:13:00.000Z",
+    "language": "en",
+    "rawContent": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting. ",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Jagmeet Singh",
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "title": "Meta removes controversial AI feature on Instagram after backlash",
+    "summary": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+    "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+    "publishedAt": "2026-07-10T23:55:07.000Z",
+    "language": "en",
+    "rawContent": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Lucas Ropek",
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "title": "Apple sues OpenAI over alleged trade secret theft",
+    "summary": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+    "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+    "publishedAt": "2026-07-10T21:00:29.000Z",
+    "language": "en",
+    "rawContent": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Sarah Perez",
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "title": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
+    "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
+    "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+    "publishedAt": "2026-07-10T19:00:00.000Z",
+    "language": "en",
+    "rawContent": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start [&#8230;]",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Rebecca Bellan, Theresa Loconsolo",
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "title": "全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型",
+    "summary": "换更大的模型就等于更聪明？\n【导读】换更大的模型就等于更聪明？这可能是Claude Code用户最深的误会。很多人为此一路换到最贵的Fable，近日，Anthropic，亲手澄清了这个误区。\n你有没有过这种时刻：Claude Code写代码写砸了，第一反应，就是赶紧换个更强的模型。\n但这一招，很多时候并不管用，甚至是在白花钱。\n近日，Anthropic官方发了一篇长文专门来讲这件事。\n\nAnthropic官方长文\n起因是太多人把Claude Code里的两个选项搞混了：\n一个是模型选择（Model），一个是努力度（Effort）。\n\nAnthropic官方长文\n过去，大家对这两个选项的理解都很简单：换更大的模型，AI就更聪明；把Effort调高，无非是让AI多想一会儿。\n而就在今年3月，这个误会还惹出了一场不小的混乱。\n当时，不少开发者发现，手里的Claude Code突然「变笨」了。该读的文件不读，该跑的测试不跑，任务干到一半就撂挑子，反过来问你要更多信息。\n于是，GitHub上骂声一片。\n最狠的一刀来自AMD的AI负责人Stella Laurenzo。\n她在GitHub上翻出685",
+    "url": "https://36kr.com/p/3892222176574211?f=rss",
+    "publishedAt": "2026-07-12T05:47:23.000Z",
+    "language": "zh",
+    "rawContent": "\n \n \n  \n  换更大的模型就等于更聪明？\n  【导读】换更大的模型就等于更聪明？这可能是Claude Code用户最深的误会。很多人为此一路换到最贵的Fable，近日，Anthropic，亲手澄清了这个误区。\n  你有没有过这种时刻：Claude Code写代码写砸了，第一反应，就是赶紧换个更强的模型。\n  但这一招，很多时候并不管用，甚至是在白花钱。\n  近日，Anthropic官方发了一篇长文专门来讲这件事。\n  \n  Anthropic官方长文\n  起因是太多人把Claude Code里的两个选项搞混了：\n  一个是模型选择（Model），一个是努力度（Effort）。\n  \n  Anthropic官方长文\n  过去，大家对这两个选项的理解都很简单：换更大的模型，AI就更聪明；把Effort调高，无非是让AI多想一会儿。\n  而就在今年3月，这个误会还惹出了一场不小的混乱。\n  当时，不少开发者发现，手里的Claude Code突然「变笨」了。该读的文件不读，该跑的测试不跑，任务干到一半就撂挑子，反过来问你要更多信息。\n  于是，GitHub上骂声一片。\n  最狠的一刀来自AMD的AI负责人Stella Laurenzo。\n  她在GitHub上翻出6852个会话的日志，实测Claude的思考量比2月之前掉了67%，撂下一句：\n  Claude已经没法被信任，去干复杂的工程活了。\n  \n  Claude已经没法被信任\n  起初，大家还以为是自己的提示词没写好，或者哪里配置错了。折腾半天才恍然大悟：问题根本不在自己身上，是Anthropic悄悄改了一个设置。\n  3月4日，为了压低延迟，他们把Claude Code里的Effort选项，默认档位从high降到了medium。\n  官方更新日志里也写了，可大多数人并没注意到，他们只是感觉到，手里的模型无缘无故好像变蠢了。\n  扛了一个月，Anthropic才在4月7日把默认档位调回去，还给所有订阅用户重置了一次用量额度。\n  而多数人这时才知道，这个开关一直就在自己手边，它在暗中决定着：AI到底肯不肯为你满血干活。\n  Model换的是脑子，Effort换的是态度\n  Anthropic官方的拆解，可以简单总结为这样一句话：\n  Model换的是脑子，Effort换的是态度。\n  先说Model，它换的是脑子。\n  每个模型背后是一套「冻结的权重」，它的能力和知识，在训练结束那一刻就被焊死了：只读、不可改。\n  这意味着，你推理时喂进去的提示词、CLAUDE.md、贴进上下文的代码，全都改变不了它的这套权重：你可以引导它，却没法「训练」它。\n  换模型，本质就是换一整套权重来接你的活，所以它解决的是「会不会」的问题。\n  一个在模型训练时还不存在的库，你把文档整篇喂给它，它能现学现用，可那只对这一次请求管用，模型本身一个字都没记住，转头就忘。\n  它偶尔会一本正经地调用一个根本不存在的API，也是同一个道理。那并非查漏了，是权重照着训练里的老套路，硬拼出一串东西。\n  再往底层看一眼，就更清楚了。你写的const x = await fetch，在模型眼里先被切成一个个token，每个换成词表里的一个数字。\n  \n  图源：Anthropic官方博文\n  你写的一行代码，被切成token后各自对应词表里的一个整数：const是1078，await是2597，词表约10万个。模型拿到的从来不是文字，是这串数字。\n  模型不是一口气吐出整段答案的。它一次只预测一个token，接上去，再把整串重新算一遍，预测下一个。一段两百个token的回复，就是两百次完整的运算。\n  你等的时间、你烧的钱，大头全在这个循环里。\n  再说Effort，更换的是「态度」。\n  很多人以为高Effort就是「多想几秒」，错了。\n  它管的是Claude在这次任务上到底投入多少工作量：读几个文件、跑不跑测试、要不要额外验证、要不要把一个多步骤任务一路推到底再回来找你。\n  说白了：低Effort的Claude，倾向于快速回复，然后反过来问你要更多上下文，能不动手就不动手；高Effort的Claude，倾向于自己去翻信息、多调几次工具、一口气把长任务链跑完。\n  Effort在Claude Code里分成好几档，别把它当成一条死板的token预算线。\n  它是个行为信号，告诉Claude这活得干到多彻底、多有把握才算完，文本回复、工具调用、扩展思考，全在它的管辖范围里。\n  官方还放了一张示意图：同一条prompt，高Effort能比低Effort多吐大约7倍的token。多出来的那些，全花在读文件、跑验证、反复确认上了。\n  \n  图源：Anthropic官方博文\n  同一条prompt，高Effort路径生成的token约为低Effort的7倍，多出的全花在读文件、跑验证、反复确认上。\n  这里藏着一个反直觉的结论：小模型开高Effort，完全可能干翻大模型开低Effort。\n  不会，还是不够努力\n  知道了分工，真正有用的，是官方给的那套判断框架。\n  \n  图源：Anthropic官方博文\n  官方判断框架：Claude做错了，先问它是不够聪明还是不够努力，再决定换模型还是加Effort。\n  Claude干砸了，先别急着动模型选项。\n  第一步永远是回头查上下文：prompt说清楚了吗？该给的工具给了吗？CLAUDE.md配对了吗？大多数所谓「AI变笨」，根子都在这儿，不在模型选项上。\n  上下文确实没问题、它还是错，就问自己一句：它是不会，还是不够努力？\n  「不够努力」，很好判断：该读的文件跳过了、测试没跑、重构干到一半跑回来问你：它缺的不是脑子，是投入。\n  这是Effort的事，可以往上调一档。\n  如果「不会」，则是另一种情形：你上下文给足了，它也明显尽力了，可还是错，换个说法再试一遍还是错。\n  这时候任你怎么加Effort都白搭，这是模型的事：就要换更强的。\n  官方还打了个特别好懂的比方。\n  Sonnet，是个有一整个下午的全能选手。\n  它会把你的代码从头读到尾，跑一遍、再验一遍，最后是真把你这摊活儿吃透了。\n  Opus，是只给你五分钟的专家。它带来的是你代码库里压根没有的经验，见过的坑、该绕的雷，全是解过一堆同类问题攒下的直觉。可五分钟就那么点时间，只够它扫一眼，不能扫遍所有文件。\n  Fable，是所有人都卡住了才请得动的专科。哪怕只给五分钟，它也能一眼揪出别人谁都没看出的那处毛病。\n  当然，这位专家每个token也最贵，得留给真正没人能接的硬骨头。\n  所以才有那个反常识的结论：\n  一个Sonnet开高Effort，在不少活儿上真能干过Opus开低Effort。小模型配上充足上下文和高投入，能扛下的事比你想象的要多得多。\n  \n  图源：Anthropic官方博文\n  长任务、多步骤活上，Fable拉开最大差距，官方测试里有些任务Opus和Sonnet开到任何Effort都够不着。\n  卷完模型排行榜，给AI派活成了硬手艺\n  这篇官方解读，表面上是教你调参，背后是一个重要的转向：\n  AI编程的竞争，正在从「谁的模型更强」，转向「谁更会调度智能体」。\n  过去很简单，人挑一个最强的模型，剩下的全交给它。\n  现在不一样了。你得像个项目经理那样，给不同的模型派不同的角色、定不同的投入档位：\n  简单的改动交给Sonnet挂低档，秒回还省钱；大型重构上强模型加高档；要长时间自己跑的智能体任务，强模型配足Effort。\n  这些操作，不仅能把活干得更好，省下来的，都是真金白银的token账单。\n  Claude Code的Effort菜单里多出的那档ultracode，就是把这套「调度」做进了产品。\n  选中它，Claude拿到的是xhigh的火力，外加一项授权：遇到实质性的活儿，自己掂量要不要拉起一支智能体队伍，把任务拆下去并行干。\n  回头看3月那场「变笨」风波。\n  它能惊动整个社区，恰恰因为大多数人还停在「换模型」的老思路里，对手边这个更要命的Effort选项浑然不觉。\n  只看模型排行的时代正在过去，调度模型，正在成为核心手艺。\n  谁先学会给AI派活，谁就能抢先一步，用上那个真正肯为你卖力的Claude。否则，你手里再贵的模型，也只是一个更贵的搜索框。\n  这样，你烧的每一分token，才算真花在了刀刃上。\n  参考资料：\n  https://claude.com/blog/claude-model-and-effort-level-in-claude-code\n  https://x.com/ClaudeDevs/status/2074900291062034618?s=20\n  https://platform.claude.com/docs/en/managed-agents/multi-agent\n  编辑：元宇\n  本文来自微信公众号“新智元”，作者：ASI启示录，36氪经授权发布。\n \n",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "title": "这个周末，科技投资人都得飞一趟成都",
+    "summary": "新能源基金的下半场\n作者 | 吕敬之编辑 | 吾人\n来源 | 融中财经\n一只新能源基金落子成都。\n近日，成都交通投资集团有限公司、成都濛江投资集团有限公司、杭州碧澄能源发展有限公司、洛能（杭州）股权投资有限公司四方签署新能源产业战略合作协议。根据协议，四方将联合设立总规模10亿元的新能源并购基金，推动碧澄能源西南总部及智能运维、资产运营等专业化经营主体落户成都彭州市，助力当地构建产融协同、全域联动的绿色能源产业发展新格局。\n资本市场上的突破和产业落地上的加强，在成都相遇了。这次签约的背后，是新能源资产运营逻辑的一次悄悄转变，也是成都这座城在绿色能源赛道上的一次主动出击。\n新能源基金的诞生\n近日，成都交通投资集团有限公司、成都濛江投资集团有限公司、杭州碧澄能源发展有限公司、洛能（杭州）股权投资有限公司四方签署新能源产业战略合作��议。根据协议，四方将联合设立总规模10亿元的新能源并购基金，推动碧澄能源西南总部及智能运维、资产运营等专业化经营主体落户成都彭州市，助力当地构建产融协同、全域联动的绿色能源产业发展新格局。\n具体来说，四方将集中布局光伏、储能、光储充一体化、城乡微电网等补链强链重",
+    "url": "https://36kr.com/p/3892096788396806?f=rss",
+    "publishedAt": "2026-07-12T03:27:05.000Z",
+    "language": "zh",
+    "rawContent": "\n \n \n  \n  新能源基金的下半场\n  作者 | 吕敬之编辑 | 吾人\n  来源 |&nbsp;融中财经\n  一只新能源基金落子成都。\n  近日，成都交通投资集团有限公司、成都濛江投资集团有限公司、杭州碧澄能源发展有限公司、洛能（杭州）股权投资有限公司四方签署新能源产业战略合作协议。根据协议，四方将联合设立总规模10亿元的新能源并购基金，推动碧澄能源西南总部及智能运维、资产运营等专业化经营主体落户成都彭州市，助力当地构建产融协同、全域联动的绿色能源产业发展新格局。\n  资本市场上的突破和产业落地上的加强，在成都相遇了。这次签约的背后，是新能源资产运营逻辑的一次悄悄转变，也是成都这座城在绿色能源赛道上的一次主动出击。\n  新能源基金的诞生\n  近日，成都交通投资集团有限公司、成都濛江投资集团有限公司、杭州碧澄能源发展有限公司、洛能（杭州）股权投资有限公司四方签署新能源产业战略合作��议。根据协议，四方将联合设立总规模10亿元的新能源并购基金，推动碧澄能源西南总部及智能运维、资产运营等专业化经营主体落户成都彭州市，助力当地构建产融协同、全域联动的绿色能源产业发展新格局。\n  具体来说，四方将集中布局光伏、储能、光储充一体化、城乡微电网等补链强链重点项目，搭建一体化智慧能源调控平台，常态化开展电力现货、绿电、辅助服务等市场化交易业务，形成“项目开发—智能运营—资产资本化增值”完整产业闭环。\n  在此基础上，各方同步拓展绿色产业金融、能源数字化平台搭建、新能源产业链招商、存量清洁能源资产证券化等配套业务，通过设立专业化资产持有平台，开展新能源项目“投、运、管、退”一体化业务。同时，四方还将立足各自资源禀赋、产业运营、资本平台优势，聚焦补电微网、枢纽微网、园区微网等赛道联合打造示范项目。\n  本次合作主要围绕着光伏、储能、光储充一体化和城乡微电网这几个方面进行。四方还将建立一个一体化的智慧能源调节平台，并且会一直做下去电力现货、绿色电力交易以及辅助服务等市场化的业务，从而形成从项目开发、智能化运营到资产资本化增值的一体化闭环。闭环听上去很专业，但是拆开来其实很简单，新能源项目建起来只是一步，后面还需要有人来管理、有人来进行运营，最后还要能够变成可以流通的资产，才算是完整的整个价值链。\n  值得一提的是，在这次签约之前不久，碧澄能源刚刚完成了第一笔分布式清洁能源资产机构间的REITs扩募。这是很容易被人忽视但是很重的一个信号。发行REITs并不稀奇，但是能够在发行之后完成扩募，这就说明了市场对于这类资产的认可度在不断提高，资产运营规模也正在逐步扩大。碧澄能源董事长兼CEO李文轩在签约仪式上表示，公司已经在能源资产证券化、人工智能赋能电力交易和资产数字化运营等方向上取得了重要的进展，并且以新能源资产为主力的投资方向也受到了越来越多的长期资金的关注和认可。\n  利用当地丰富的应用场景，深入挖掘工商业屋顶资源，探索光储一体化、城市微电网等新模式，并且稳步推进大储项目的实施，在此之下，已经成功完成资产证券化的新能源资产管理平台会把区域深耕的重点放在成都。\n  对新能源赛道感兴趣的投资人可以多看看这个信号。一个签约就是水面上的部分，而水下则是整个资产运营逻辑、区域布局思路的形成过程。这个周末在成都举行的活动，表面上只是一次普通的产业合作协议签署仪式，但是实际上却是在新能源资本版图上留下的一次重要落子。\n  为什么是成都\n  一场合作能不能成，从来不是单方面的事情。\n  愿意把资源投向一座城市的企业，看重的往往不只是眼前的一纸协议，而是这座城市能不能在后续的产业落地里持续接得住。这一次，成都展现出的接住能力，来自两个层面的叠加，一边是资本端的系统性布局，一边是场景端的真实开放，两者互相补充，缺一不可。\n  先看资本端。地方国资平台在这类合作里承担的角色，越来越不只是简单的资金方，而是产业基金集群的搭建者。用资本去撬动新能源产业的高质量发展，系统推进微网生态的建设，同时不断扩容智慧能源管控平台的资产规模，提升平台的调度能力和市场化交易运营水平，这一整套动作，本质上是在为新能源资产运营商搭建一个可以长期扎根的资本基础设施。对于像新能源资产运营这类企业来说，电力现货、绿电交易、辅助服务这些市场化能力能不能落地，很大程度上取决于当地是不是已经把这些配套机制搭建成熟。成都在这方面的积累，不是临时起意，而是一整套产业协同思路的自然延伸。\n  再看场景端，这是另一种更稀缺的资源。资金可以流动，场景却很难复制。工商业屋顶资源丰富，城乡微电网建设的空间充足，具体到街道和厂区的真实应用场景，才是新能源项目能够扎根生长的土壤。愿意把这些场景真正开放出来，用真实的产业需求去吸引产业主体和资本聚集,实现资源互补、业务联动，这种开放意愿，对新能源资产运营商而言,分量往往比资金本身更重。\n  成都把彭州这样的区域作为西南市场的核心示范支点，背后的逻辑也不难理解。本地应用场景丰富，产业基础扎实，为光储一体化、城市微电网这类创新模式的落地提供了天然的试验田。而放在更大的背景下看，成都这些年在推进国家碳达峰试点城市建设、构建全域协同新型电力系统的过程中，已经积累了相当成熟的产业协同经验，也培养出了主动开放场景的意愿。这种积累不是一朝一夕能形成的，而是这座城市在绿色能源领域长期投入、持续深耕的结果。\n  一座城市愿意开放真实场景，愿意搭建产业基金集群，愿意升级智慧能源调控平台，这些条件叠加在一起，才会让已经在资产证券化上取得突破的新能源资管企业，愿意把区域深耕的重心放在这里。对于关注区域产业布局的投资人来说,成都展现出的这种承接能力和开放诚意，本身就是一个值得重视的信号，说明这座城市在新能源赛道上，正在从政策洼地，逐渐成长为产业和资本都愿意主动靠近的目的地。\n  新能源资产正开启一扇新大门\n  把目光从成都这一个合作中移开，在整个行业的背景之下看去，一个新的值得重视的趋势正在形成之中。\n  在很长一段时间内，人们对新能源资产的印象就是重资产、慢回报。电站建好了，但是资金被锁在了里面，短期内无法变现出来，这也是以前很多投资者不愿意进入该领域的一个原因。但是REITs等工具的出现，正在慢慢改变着这样的逻辑。资产不是建设完成之后就停止了的过程，而是可以证券化的起点、可以流通的起点、可以退出的起点。如果这条通道打通了的话，那么长期配置新能源资产的意愿就会大大增加起来，因为人们所看到的已经不是只有一项需要长时间持有下去的固定资产了，而是一系列具有明确退出机制并且能够灵活调整的金融产品。\n  从发行第一只分布式清洁能源资产机构间REITs开始，到完成扩募，整个过程表明市场对于新能源资产证券化接受程度在迅速提高。随着人工智能在电力交易以及资产数字化运营中被越来越多地使用，新能源资产的运行效率与公开性也会得到很大的改善。这样就会有一个直接的结果出现，即原来对这个行业保持观望态度的投资人会重新考虑进入市场的时机。\n  同时，光储充一体化、城乡微电网等细分场景的逐步成熟也给新能源资产开辟了更多的价值实现途径。以前新能源资产的价值主要依靠卖电来实现，但是现在除了卖电之外，还有储能调峰、绿电交易、辅助服务、资产证券化等等新的价值实现方式在叠加起来，使得整个资产的想象空间变大了。补电微网、枢纽微网、园区微网等概念虽然还比较陌生，但是已经在示范项目的基础上开始规模化的实施，并且成为了新能源资产运营链中必不可少的一个环节。\n  新能源资产管理行业正处在一次身份上的变化之中。过去它更偏向于工程、运营类的行业，而现在则与资本市场深度融合，并且逐渐形成了既有产业属性又有金融��性的新赛道。这场变革才刚开始，以后会有很多的城市提供出场景和资源，很多的资金会重新去评价这个赛道的价值，也会出现更多的像REITs这样的创新工具来帮助新能源资产找到自己独特的流通途径。\n  本文来自微信公众号“融中财经”，作者：吕敬之，36氪经授权发布。\n \n",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "title": "近百名玩家涌入具身数据 : 一年融资44.7亿，谁能真靠“卖数据”赚钱？",
+    "summary": "林方舟 发自 凹非寺\n在湖南郴州，一家中国移动营业厅挂牌“具身数据采集5S店”，普通顾客领一套夹爪、手套和头戴相机，经过简单培训，就能边做家务，边采集机器人训练数据。\n首期投放的1000套设备，满产状态下每年能采集100万小时数据。我仿佛听到了商家心里打的小算盘：既采了数据，又赚了眼球，4A广告公司都应该来学学。（doge）\n具身数采类似的“花活”还有不少：有的为了采数据免费上门保洁（欢迎来我家），有的把数采做成VR游戏，还有的把机器人接入互联网，采集员不用跑到数采工厂，远程就能“云操控”。\n\n具身数采\n不过，以上案例看完笑一笑就好了，真要采到符合要求的数据其实并不简单。之所以“花活”层出不穷，都是因为机器人实在是太缺数据了。\n眼下大家都在牟足了劲采数据，但还少有人全面梳理过这个行业的图谱。\n量子位不完全统计了97家国内具身数据玩家的情况，其中70家做数据采集，27家做数据infra。\n过去一年（2025年7月1日至2026年7月1日），15家「不做本体、不做模型、只做数据的独立具身数据服务商」，共融资约44.7亿元。\n在资本对具身智能“猛猛上头”的当下，这个数字其实并不算多。量子位此",
+    "url": "https://36kr.com/p/3892027841362694?f=rss",
+    "publishedAt": "2026-07-12T02:16:07.000Z",
+    "language": "zh",
+    "rawContent": "\n \n \n  林方舟 发自 凹非寺\n  在湖南郴州，一家中国移动营业厅挂牌“具身数据采集5S店”，普通顾客领一套夹爪、手套和头戴相机，经过简单培训，就能边做家务，边采集机器人训练数据。\n  首期投放的1000套设备，满产状态下每年能采集100万小时数据。我仿佛听到了商家心里打的小算盘：既采了数据，又赚了眼球，4A广告公司都应该来学学。（doge）\n  具身数采类似的“花活”还有不少：有的为了采数据免费上门保洁（欢迎来我家），有的把数采做成VR游戏，还有的把机器人接入互联网，采集员不用跑到数采工厂，远程就能“云操控”。\n  \n  具身数采\n  不过，以上案例看完笑一笑就好了，真要采到符合要求的数据其实并不简单。之所以“花活”层出不穷，都是因为机器人实在是太缺数据了。\n  眼下大家都在牟足了劲采数据，但还少有人全面梳理过这个行业的图谱。\n  量子位不完全统计了97家国内具身数据玩家的情况，其中70家做数据采集，27家做数据infra。\n  过去一年（2025年7月1日至2026年7月1日），15家「不做本体、不做模型、只做数据的独立具身数据服务商」，共融资约44.7亿元。\n  在资本对具身智能“猛猛上头”的当下，这个数字其实并不算多。量子位此前统计，今年上半年，具身“大脑派”公司半年就融了223亿元。\n  为了帮你看清具身数据行业，我们总结了以下十个行业现状。\n  数据怎么采？\n  现状1：数据采集技术路线分为四大类，跨路线采集赛道最拥挤\n  目前主流具身数据采集的技术路线可以分为四大类：\n  真机遥操：人类操控真实机器人执行任务，同步采集动作、状态及传感器数据。\n  无本体采集：人直接完成示范，通过动捕、夹爪映射、第一视角相机等设备采集动作，无需机器人参与。\n  仿真合成：在虚拟环境中批量生成机器人交互数据，用于模型训练。\n  互联网视频蒸馏：从互联网视频中提取人类动作知识，转化为具身模型可学习的数据。\n  量子位不完全统计的70家数采公司/平台中，有30家同时走多条采集路线，占43%，例如：真机遥操+无本体、真机遥操+仿真、无本体+仿真、全路线等。\n  走跨路线采集方案的玩家，比单独押注任何一条路线的玩家都要多。\n  行业常用数据金字塔来形容机器人训练所需的数据结构。目前没有任何一种数据采集方式能够独自满足机器人的训练需求。\n  \n  △\n  现状2：单独押注真机遥操路线的玩家最多\n  依次分析每条技术路线。\n  单独押注真机遥操路线的最多，有22家，占31%。\n  这22个玩家中，13家是国资数据平台，7家是机器人公司（生产机器人硬件或开发具身大模型的公司），还有1家从AI数据标注行业转型，1家从工业装备制造领域跨界。\n  机器人公司有硬件优势和真实需求，做真机遥操采集是自然而然的选择。\n  而国资数据平台的优势则是“不怕重”。遥操是重资产路线，需要买本体、租场地、雇操作员，这些恰好都是国资平台容易调动的资源。\n  单独押注无本体采集路线的公司有15家，占21%。\n  这条赛道的公司最年轻，绝大多数都成立于2024年9月之后。\n  无本体采集路线的技术也最丰富，子类包括：Ego视角、UMI、动作捕捉、sEMG肌电、触觉采集……\n  而单独押注仿真合成的玩家有2家：松应科技和谋先飞（Motphys）。\n  仿真赛道曾经的知名玩家，如今都选择把鸡蛋放在多个篮子里。\n  比如，曾以仿真数据为核心的光轮智能，也开始采集人类数据；曾是最坚定的仿真派之一的银河通用，今年6月发布了全身遥操作系统，拥有了遥操数据采集能力。\n  原因有两方面：外部，真机数据和人类数据的供给快速增加，价格持续下降，仿真数据的规模和成本优势被削薄；内部，sim2real gap仍没有太好的解法，很难高保真还原真实世界中的摩擦、形变、力觉与触觉反馈。\n  单独押注互联网视频蒸馏路线的也只有1家：枢途科技。\n  这家公司从互联网单目RGB视频里提取多模态机器人训练数据，宣称能把综合采集成本降到行业平均水平的千分之五。\n  \n  具身数采\n  玩家是谁？\n  现状3：独立数据服务商已成最大的玩家群体\n  如果不按技术路线，而是按身份分类，97名玩家可分为5类：\n  独立数据服务商39家，占40%；\n  国资数据平台25家，占26%；\n  机器人公司24家，占25%；\n  工业和IT跨界公司5家，占5%，例如来自物流、装备制造、自动化工程等领域的公司；\n  大厂平台型公司4家，占4%，例如华为、京东等。\n  可以看到，最大的玩家群体是独立数据服务商。\n  这说明：具身数据已经成长为一条独立赛道，不再是机器人公司的附属部门。\n  \n  △\n  现状4：三分之二玩家“具身原生”，三分之一玩家“跨界转型”\n  再换一种分类方式，将所有具身数据行业玩家分为“具身原生”和“跨界转型”两类。\n  “具身原生”公司成立之初主业就是具身数据或具身智能相关业务；“跨界转型”公司多从AI数据标注、自动驾驶、动作捕捉或工业领域转型而来。\n  97名玩家中，65家“具身原生”，占67%；32家“跨界转型”，占33%。\n  再拆开来看，数采公司和数据infra公司的构成完全相反。\n  70家数采公司里，57家“具身原生”，约占八成；27家数据infra公司里，19家“跨界转型”，约占七成。\n  为什么infra吸引转型公司，采集行业却多是新玩家？\n  很多具身数据infra玩家是AI数据标注公司，例如海天瑞声、数据堂、云测数据等。他们积累的管线、质检和交付能力，很适合平移到具身数据infra环节。\n  而具身数据没有现成数据，采集环节则要从零构建资产，老玩家没有优势，新公司反而容易轻装上阵。\n  \n  具身数采\n  产能与布局\n  现状5：全行业年产能160万至180万小时，短期目标扩大15到20倍\n  现有具身数据产能是多少？离市场需求还有多少差距？\n  量子位不完全统计，具身数据行业现有年产能为：160万至180万小时+7000万至8000万条。\n  行业的短期目标为：未来1-3年内，产出2500万至3500万小时+亿条级数据。如果仅看小时数，短期目标是现有产能的15-20倍。\n  需要注意的是，由于各家机构披露口径不同，小时数和条数目前没有统一的换算标准，因此在这里并行列出。\n  这些数字只统计了真机遥操数据和无本体采集数据，剔除了仿真合成数据。产能通过公司/平台已披露的数据保守估计而来，实际数字可能还会更多。\n  而机器人训练数据的总需求量，目前仍然未知。但可以参考大语言模型的锚点：LLM可以吃掉整个互联网现成的语料，机器人需要的数据却只能一条一条采。有统计称，截至今年初，全球高质量真实物理交互数据总量只有约50万小时，不足LLM训练数据量的两万分之一。\n  换个角度看，即便产能短期目标全部兑现，相比大语言模型的数据量，可能也只是刚够到起跑线。产能与需求之间仍然存在巨大差距。\n  \n  具身数采\n  现状6：全国六成省份建有数采工厂，目前长三角分布最多\n  这些数据都是在哪里采集的？\n  量子位不完全统计，全国的数采工厂已经铺到20个省份，其中国资背景的数采工厂覆盖16个省份。\n  数采工厂主要分布在长三角、京津冀和珠三角地区。其中，长三角以30座居首。\n  不少人力成本较低的三、四线城市也成为数采工厂的选址地，例如宿迁、自贡、郴州、运城、德清等。\n  分布模式和技术路线相关。遥操类数采工厂散布各省，轻资产的无本体路线公司则扎堆在一线城市。\n  不少城市正在打造数采重镇的城市名片。\n  例如，无锡是全国首个提出城市全域数据采集概念的城市。它做的最重要的事是：鼓励制造业、服务业企业开放产线、平台，将真实场景作为数据采集厂，采集机器人最稀缺、也最实用的数据。\n  \n  △\n  钱往哪流？\n  现状7：15家独立具身数据服务商过去一年融资约44.7亿元\n  再来看看最能说明问题的指标：钱。\n  由于机器人公司的数据业务无法从整体融资中剥离，我们圈出15家过去一年有融资记录的“独立具身数据服务商”，这些公司的融资情况在行业中很有代表性。\n  先解释一下，“独立具身数据服务商”的筛选标准有三条：不做通用机器人本体，不训练具身模型，具身数据为核心业务。\n  量子位不完全统计，过去一年间（2025年7月1日至2026年7月1日），这15家“独立具身数据服务商”共完成34起融资，合计约44.7亿元人民币。\n  融资的时间段高度集中。2026年4月至6月三个月内，融资事件数量占了四成多。这和今年上半年具身智能全行业的资本狂热息息相关。\n  量子位曾统计，2026年上半年，具身智能全行业共融资约438亿元。\n  具身数据赛道一年融的钱，只是具身智能全行业半年融资的零头，说明起码在眼下，这个赛道还并不够“性感”。\n  \n  具身数采\n  现状8：独立具身数据服务商可划分为3个梯队，分化明显\n  再往下深扒一层，具身数据行业内部发展并不平衡。\n  这15家“独立具身数据服务商”可以划分为三个梯队：\n  第一梯队光轮智能最突出。\n  这家公司过去一年完成6起融资，共融资31亿元，约占总融资额的七成。\n  它还是唯一一家披露估值的“独立具身数据服务商”。最新估值超20亿美元，约合人民币超135亿元，是全球首个具身数据独角兽。\n  第二梯队有11家公司，例如简智机器人、诺亦腾机器人、渊澈太初、觅蜂科技等。\n  第二梯队的公司，过去一年累计融资在数千万至数亿元间，融资阶段大多为Pre-A 轮及以前，只有几家成立时间较早的AI数据标注转型公司突破了A轮。\n  第三梯队的公司有3家：枢途科技、智域基石、补天石科技。\n  他们过去一年的累计融资在数千万元级别，融资轮次为天使轮，业务还处于早期验证阶段。\n  \n  △\n  现状9： 69家投资机构出手，没有一家重仓\n  从资本的角度看，过去一年，共有69家投资机构投过这15家“独立具身数据服务商”。\n  出手最多的国方创投，投了3次；出手2次的有5家投资机构；剩下63家机构，都只投了1次。\n  对照具身模型融资热时头部机构抢占份额、连续加注的景象，眼下，具身数据赛道虽然方向有共识，但标的还没有共识，没有真正敢重仓的投资机构。\n  资本的谨慎有理由：相较于想象空间极大的具身“大脑”，具身数据是“劳动力密集型”的生意，价格会越卷越低，客户需求量也有相对明确的预期，天花板就在那里。\n  但也有投资人告诉量子位，具身数据行业存在一定的延展想象空间：一方面，这是一个全球生意，国外的市场很大；另一方面，数据采集的能力还能迁移到模型评测等，成为物理AI的基础设施。\n  \n  △\n  现状10：半数以上“独立具身数据服务商”成立不到一年\n  总的来看，独立的具身数据行业仍处于较早期的阶段。\n  公司发展处于早期。半数以上近一年融到资的“独立具身数据服务商”成立时间不足一年。\n  融资处在早期。15家“独立具身数据服务商”中，13家公司的最新轮次在A轮及以前。\n  商业模式处在早期。没有一家公司披露过利润。仅弈人科技一家自称盈利，但也没公开利润的具体数字。\n  \n  具身数采\n  最后，把以上十个现状总结成三句话：\n  第一句，具身数据行业已经成长为一条独立赛道，吸引大量玩家涌入，并且正在成为AI领域新增就业岗位的蓄水池、地方经济活力的新引擎。\n  第二句，这条赛道仍然处于早期阶段，许多问题还没解决，许多共识还没形成，许多变量还没收敛。\n  第三句，资本的态度最诚实。鲜有公司验证过：“纯卖数据”是一门赚钱的生意。VC还在撒网阶段，没人能看清哪条鱼最大。\n  接下来的一两年，大概率就是这门生意的验证窗口。产能会不会兑现，价格会卷到哪里，谁先把利润表拿出来，决定了具身数据商能否真正成为赚钱的“卖铲人”。\n  本文来自微信公众号“量子位”，作者：关注前沿科技，36氪经授权发布。\n \n",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "title": "独家 | 智谱创始人唐杰发内部信：「GLM 时刻」之后，什么是更重要的事",
+    "summary": "文 | 周鑫雨\n编辑 | 张雨忻\n《智能涌现》独家获悉，2026 年 7 月 11 日，智谱创始人唐杰，在智谱发布了主题为《巨浪已来》的内部信。\n过去半年来，智谱收获了创立以来的高光时刻：市值较半年前上市初期涨了 10 倍，并在 2026 年 6 月，跻身“万亿港元俱乐部”——这个数字，是百度市值的近 3 倍，并且超过了小米。7 月 8 日，首批股票解禁后，智谱依然稳住了股价。\n这也是当下 AI 大模型赛道，最性感的故事：押注对的技术方向，换来斐然市场口碑和商业化成绩。\n抽丝剥茧，智谱起飞的根源，离不开一年前对 Coding 的押注。2025 年初，智谱就开始重新分配资源，将力量收敛到了对模型 Coding 能力的提升上。\n一场活动上，清华大学计算机系教授、智谱创始人唐杰点出了押注 Coding 的理由：DeepSeek R1 的出现，标志着 Chat 范式的探索已经基本结束。后DeepSeek时代的模型训练范式，他形容智谱“Bet（赌）”了 Coding 和 Reasoning——一种能与 Agent 共生共荣的模型能力。\n事实证明，这是一次成功的赌注。\n如今，AI Coding 已",
+    "url": "https://36kr.com/p/3891132709206784?f=rss",
+    "publishedAt": "2026-07-11T11:28:29.000Z",
+    "language": "zh",
+    "rawContent": "\n \n \n  文 | 周鑫雨\n  编辑 | 张雨忻\n  《智能涌现》独家获悉，2026 年 7 月 11 日，智谱创始人唐杰，在智谱发布了主题为《巨浪已来》的内部信。\n  过去半年来，智谱收获了创立以来的高光时刻：市值较半年前上市初期涨了 10 倍，并在 2026 年 6 月，跻身“万亿港元俱乐部”——这个数字，是百度市值的近 3 倍，并且超过了小米。7 月 8 日，首批股票解禁后，智谱依然稳住了股价。\n  这也是当下 AI 大模型赛道，最性感的故事：押注对的技术方向，换来斐然市场口碑和商业化成绩。\n  抽丝剥茧，智谱起飞的根源，离不开一年前对 Coding 的押注。2025 年初，智谱就开始重新分配资源，将力量收敛到了对模型 Coding 能力的提升上。\n  一场活动上，清华大学计算机系教授、智谱创始人唐杰点出了押注 Coding 的理由：DeepSeek R1 的出现，标志着 Chat 范式的探索已经基本结束。后DeepSeek时代的模型训练范式，他形容智谱“Bet（赌）”了 Coding 和 Reasoning——一种能与 Agent 共生共荣的模型能力。\n  事实证明，这是一次成功的赌注。\n  如今，AI Coding 已经成了 AI 商业化的最近端。一个典型的案例，是同样靠押注 Coding，对 OpenAI“弯道超车”的 Anthropic。2024 年 1 月，Anthropic 的年化收入还只有 8700 万美金；2026 年 6 月，它的 ARR 已经突破 470 亿美元，\n  2025 年 7 月发布的旗舰模型 GLM-4.5，到 2026 年 6 月上线并开源的 GLM-5.2，让智谱跻身全球 AI Coding 第一梯队。 开源的 GLM-5.2，多个核心指标已经追平甚至超过了 Claude Opus 4.8，以及 GPT-5.5。\n  技术能力，也体现在了营收上。智谱 2025 年财报显示，截至报告期末（2026 年 3 月），MaaS 平台的 ARR 达到了 17 亿元，过去一年提升了 60 倍。\n  而唐杰的内部信，向我们展示了后 Coding 时代，智谱押注的新命题：\n  \n   长程任务能力（Long Horizon Task）\n   完全自治的智能体系统（Autonomous Agent System）\n   自我进化（Self-Evolving）\n  \n  以下是唐杰的内部信内容：\n  巨浪已来\n  ——致每一位智谱人和关心人工智能未来的伙伴\n  请允许我借这篇文章，谈三件事：我们是谁，我们如何看待这个时代，以及我们决定全力倾注的战略方向。\n  （一）我们是谁：“本质、反直觉、专注”\n  智谱从不是一家追风口的公司。它从一间实验室里长出来，带着这间实验室二十年的方法论。这套方法论可以用三个词概括：本质、反直觉、专注——想得足够深，才敢选得足够反；选得足够反，就必须守得足够久。\n  回望来路，我们几乎每一个关键选择都曾经显得“反直觉”。2006年，我们守着一台台式机上的学术搜索系统坐冷板凳，因为我们想清楚了那背后是“挖掘学科演化机理”这件值得用十年回答的事；2021到2022年，当“让机器像人一样思考”被绝大多数人视为登月般的疯狂计划时，我们抽调资源、押注千亿参数，做出了GLM-130B——那是ChatGPT引爆世界整整一年半之前；而在智谱2026年1月8日H股上市的那一天，我们把它当作一个全新的起点，坚定地全面回归基础模型研究，全力冲击下一代模型。\n  别人敲钟，我们归零。这不是姿态，这是信念——既然终点是AGI，那么短期利益或者行业风口，都只是通向终局的沿途风景。\n  支撑我们一路走到今天的，是一种极致的专注和至真至纯的理想主义。学术搜索系统从一台台式机做到千万用户，我们用了十年；大模型这条路，我们又做了近十年，并且还会坚定深耕，继续走下去。今天的智谱，是一群愿意追问本质、敢于反直觉，又能专注地把事情做到底的人——这就是智谱核心竞争力的来源。\n  （二）我们如何看待这个时代：智能的上界正在被改写\n  如果说过去二十年我们学会了一件事，那就是：真正的商业机会，从来不在产品和模式的微调里，而在智能上界的跃迁中。这是我们对当下AI变革最根本的判断，也是我们最想传递给大家的认知。\n  这一次变革，本质不是一次产品创新或商业模式创新，而是技术革命本身抬高了“智能上界”。谁能率先将该上界向上推升一寸，谁就能重新定义千行百业的能力边界。所有聚焦第一性原理的新一代AI企业，争夺的正是这一寸的突破。\n  而智能上界的演进，有一条清晰的路径。人工智能正在完成从感知智能到认知智能的跨越——机器不再只是“看见”和“听见”，而是开始“理解”和“推理”。而下一步，正指向AGI。\n  我们对AGI有一个朴素而苛刻的定义：AGI不是某一个天才的智慧，而是全人类智慧水平的总和。它理应具备创造出“相对论”级别原创知识的能力，这是我们衡量是否真正到达巅峰的唯一标准。通往这个终点的道路上，有几座必须翻越的山峰，它们也正是今天技术浪潮最汹涌的地方：\n  第一座：长程任务能力（Long Horizon Task）\n  今天最令人兴奋的突破，是让模型学会完成一个极长的任务——不是即时问答，而是跨越数周、数月乃至数年的规划与执行。例如，一个模型可以不知疲倦地在软件中寻找漏洞，本质上是在学习一名顶级安全专家的思维方式，然后通过机器的耐力把它放大。\n  第二座：完全自治的智能体系统（Autonomous Agent System）\n  在长程任务之上，能够自主驱动、协同作业、7×24小时运转的智能体群体将成为新的生产力形态。我们曾提过“一人公司OPC”，但技术的脚步比预想更快——我们正在走向“全自动化公司NPC”。记忆（Memory）、持续学习（Continual Learning）、自我评判（Self-Judge）这三个曾被认为需要范式变革才能解决的难题，现已在技术与应用的双重驱动下逐步消解：长上下文与检索增强生成（RAG）逼近记忆雏形；模型迭代频次的提升本身即在逼近持续学习；前沿模型已显露自我评判的萌芽。\n  第三座：自我进化（Self-Evolving）\n  这是最艰难、也最诱人的一座。AI训练AI已经成型——模型自己写代码、自己清洗与合成数据、自己训练自己。这或许会消耗一些算力，却节省了最宝贵的人力与时间。而在大模型时代，速度是最重要的，快速迭代会直接拉开认知的代际差距。当海外头部企业开始筹建百万乃至两百万芯片级别的算力集群，其真正的用途，很可能正是让模型自己训练自己。\n  翻过这三座山之后，会发生什么？\n  AI将开始学习什么是“我”，什么是自我认知；再往后，它会触及人类的情感；更远处，是意识本身。从感知到认知，从认知到通用，从通用走向超级智能（ASI）——这条路已经铺开，巨浪已来，且不可逆转。\n  这并非我们一家之言。Google DeepMind在《From AGI to ASI》报告中给出了一个冷峻的论断：即便单个模型的能力永远停在人类水平，只要算力还在增长，超级智能可能会被硬生生“挤”出来。他们推演，若全球可运行AGI实例以每年十倍速增长，五年后将达一亿个。这些共享同一底层大脑、思考效率百倍提升且零成本复制经验的智能体，在群体层面即等同于ASI。换言之，从AGI迈向ASI，既需要算法层面的突破，也需要超大算力资源的汇聚。\n  这种不可逆转的趋势将自上而下穿透整个技术栈：当AGI到来，今天的应用或许都要被重构为AI原生，甚至不再需要这些应用；操作系统可能被重写，未来你打开电脑，看到的将是一个“LLM OS”，所有功能按需生成（generate on demand）；再往深处，是对运行了八十年的冯·诺依曼体系的挑战。金融、法律、电商、互联网……没有一个行业会置身事外。很多朋友找到我，说想变革企业、追赶AI的步伐，但真正洞察到“这场不可逆变革已然开启”者，仍属寥寥。\n  （三）我们全力倾注的方向：“摸高”\n  认清趋势之后，剩下的就是选择。而智谱的选择，一如既往地“反直觉”—— 在行业普遍加速商业变现的当下，我们决定向上突破。\n  我们将这一战略命名为 “Touch High（摸高）计划”。在人工智能从感知、认知向完全通用智能跨越的历史节点，智谱将以“摸高”的姿态，挑战当前技术的物理与算法极限。未来两年，我们计划战略性投入——不追求短期的应用变现，而是直指AGI的下一个高地。\n  这笔投入将集中在四大核心引擎上：\n  其一，长程任务。让AI从“即时问答”走向“宏大工程”，研发新一代记忆架构，使模型贯穿项目全生命周期“边学、边做、边记”，并具备将宏大目标（如“设计一种新型抗癌药物分子”）自主拆解为数千个可执行子任务的顶层能力。\n  其二，自治智能体系统。从“智能助手”走向“数字员工”，构建包含成千上万个不同专业“性格”与“技能”的智能体社会，让它们自主辩论、协作、审查代码、调度资源，实现“自动驾驶”级别的数字生产力。\n  其三，完全自我训练（Fully Self Training）。在人类高质量数据即将耗尽之际，把算力转化为进化的燃料——建设高质量合成数据工厂，通过AI与AI的博弈对抗（Self-Play）实现知识的“无中生有”，并在安全沙盒内赋予系统重构自身代码的能力，让进化速度挣脱人类工程师的物理限制。\n  其四，极致安全治理。这是四大引擎中我最想着重强调的一个。\n  能力越强大，安全约束机制也必须越稳固。智谱创立伊始即确立准则：AI必须服务于人类福祉，服务于国家战略。公司摒弃外挂式安全补丁，坚持将人类伦理、社会规范及国家法律法规作为底层公理写入模型价值函数；计划投入百亿级资源攻坚“机械可解释性”，厘清模型决策背后的神经元逻辑，推动黑盒系统向透明可解释系统转变；同时积极参与国际AI治理，防范AI技术被滥用。\n  这种紧迫感并非杞人忧天。当海外最前沿的顶级模型因风险考量而暂缓全面公开发布，其企业负责人公开警示AI的深远影响将深刻重塑全球力量格局时，我们更应清醒：超级智能的实现与超级对齐的研究，必须同步推进。这也是我们在面对颠覆性技术时反复审视的命题——历史一再表明，当一项技术抵达足以改变文明进程的力量量级时，安全就不再是附属品，而是技术得以存续与被允许应用的根本前提。\n  （四）开放生态：智能普惠和安全治理的底层逻辑\n  我们始终认为，人工智能作为引领未来的战略性技术，其长远发展离不开开放协同的产业生态。前沿智能的价值不仅在于技术突破本身，更在于它能否广泛赋能千行百业、惠及每一位开发者。我们坚信，真正的安全并非建立在技术封闭与壁垒之上，而是源于阳光下广泛的共建、共享与监督。\n  正是基于对技术普惠的深刻认同，智谱给出了自身的战略答卷。近日，我们发布了迄今能力最强的开源模型 GLM-5.2，它支持真正可用的百万（1M）上下文，在长程任务上继续保持领先，面向全量用户开放，并将以最宽松的 MIT 协议正式开源——任何人都可以下载、部署、商用，没有主体界别。这是公司以产品形态表达的坚定态度。\n  我们选择相信另一条路：前沿智能不应只属于少数人，也不应被少数规则随时收回。它应该开放、可用、可构建，并服务于每一位开发者。\n  这与“摸高”并不矛盾，反而是一体两面：我们一只手向上摸高，挑战智能的极限；另一只手向下铺路，让最前沿的能力尽可能地开放与普惠。摸到的高度属于全人类，修成的道路也属于每一个人。\n  （五）结语：为什么是现在，为什么是我们\n  有人会问：为什么智谱上市后反而还要继续倾注核心资源、向最不确定的方向“摸高”？因为我们相信一个朴素的道理：真正的登顶者，会把山修成路。\n  我们想清楚的那个本质，曾通过“悟道大模型”项目凝聚成几百位科学家的共识，又通过智谱的产业投资和整个生态，变成一代创业者起跳的基石。今天，我们想把这条路修得更高、更宽——高到能保护我们自己、守卫国家安全，高到能让人类有机会探索更多未知，探索宇宙的奥秘；也宽到能让每一位开发者、每一个团队，都走得上来。\n  在AGI时代，这些曾经遥不可及的事，第一次有了实现的可能。这正是我们这一代国人最大的幸运，也是最重的责任。\n  巨浪已来，趋势不可逆转。智谱要做那个迎着浪头、向上摸高的人。\n  不登顶，就是失败。\n  这一次，我们要摸到的，是属于全人类的那个高度。\n  智谱创始人 唐杰\n  2026年7月11日\n \n",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "sourceId": "zhihu",
+    "sourceType": "zhihu",
+    "title": "冉莹颖称曾多次想离婚，录综艺本想救赎婚姻，录完「不再执着于改造对方」，透露出怎样的婚姻相处智慧？",
+    "summary": "7月6日，拳王邹市明妻子冉莹颖在《姐姐当家2》看片会上表示自己曾多次想离婚，更是自曝去民政局都去了3次。她坦言一开始上这个节目是为了救赎婚姻，改变丈夫，但录完后感觉救赎的是自己。 媒体提问：在录节目过程中，第一次进到演播室就失控大哭。 其实我特别感恩这次录制也让我的爱人看到了他自己的问题，让我自己也审视了自己的问题，我觉得女人在这个社会当中要越来越找到自己，让自己真正的强大起来 公开资料显示，《姐姐当家第二季》是由爱奇艺出品的熟龄女性观察节目，当家姐姐为杜华、房主任、冉莹颖、小鹿、徐梦桃。节目计划于2026年7月在爱奇艺播出。节目以“姐姐当家，爱是什么”为主题，聚焦不同年龄、不同职业、不同人生",
+    "url": "https://www.zhihu.com/question/2057515225566242600",
+    "publishedAt": "2026-07-06T09:24:16.000Z",
+    "language": "zh",
+    "rawContent": "7月6日，拳王邹市明妻子冉莹颖在《姐姐当家2》看片会上表示自己曾多次想离婚，更是自曝去民政局都去了3次。她坦言一开始上这个节目是为了救赎婚姻，改变丈夫，但录完后感觉救赎的是自己。 媒体提问：在录节目过程中，第一次进到演播室就失控大哭。 其实我特别感恩这次录制也让我的爱人看到了他自己的问题，让我自己也审视了自己的问题，我觉得女人在这个社会当中要越来越找到自己，让自己真正的强大起来 公开资料显示，《姐姐当家第二季》是由爱奇艺出品的熟龄女性观察节目，当家姐姐为杜华、房主任、冉莹颖、小鹿、徐梦桃。节目计划于2026年7月在爱奇艺播出。节目以“姐姐当家，爱是什么”为主题，聚焦不同年龄、不同职业、不同人生阶段女性的真实生活，将镜头对准家庭、婚姻、事业、自我成长等现实命题，在真实故事中重新探寻关于爱的多元答案。https://baijiahao.baidu.com/s?id=1869944807296919020&wfr=spider&for=pc",
+    "rawContentType": "news",
+    "metadata": {
+      "heat": "414 万热度",
+      "answerCount": 108
+    }
+  },
+  {
+    "sourceId": "zhihu",
+    "sourceType": "zhihu",
+    "title": "黄仁勋称「Prompt 已死，AI 圈正追逐 Loop」，这对 AI 开发及工程师意味着什么？",
+    "summary": "\\n \\n \\n 最近，硅谷最火的是哪个词？\\n Loop。\\n 一打开X，全网铺天盖地都在讲Loop Engineering。\\n 硅谷一众大佬，都在纷纷放弃提示词，转向自主循环！\\n 黄仁勋给我们划出下一阶段的新重点（也是烧token的新方法）：\\n Nobody writes prompts anymore. The new job is to write and handle loops.\\n （没人再写提示词了，新工作是写Loop，搞Loop。）\\n \\n 最近，Anthropic工程师透露：\\n Anthropic内部80%以上工程师已在使用自改进循环（self-improving",
+    "url": "https://www.zhihu.com/question/2054980630543442200",
+    "publishedAt": "2026-06-29T09:32:42.000Z",
+    "language": "zh",
+    "rawContent": "\\n \\n \\n 最近，硅谷最火的是哪个词？\\n Loop。\\n 一打开X，全网铺天盖地都在讲Loop Engineering。\\n 硅谷一众大佬，都在纷纷放弃提示词，转向自主循环！\\n 黄仁勋给我们划出下一阶段的新重点（也是烧token的新方法）：\\n Nobody writes prompts anymore. The new job is to write and handle loops.\\n （没人再写提示词了，新工作是写Loop，搞Loop。）\\n \\n 最近，Anthropic工程师透露：\\n Anthropic内部80%以上工程师已在使用自改进循环（self-improving loops），3-6 个月将达 100%。\\n 老黄：prompt已死，整个ai圈都在疯狂追loop",
+    "rawContentType": "news",
+    "metadata": {
+      "heat": "300 万热度",
+      "answerCount": 23
+    }
+  },
+  {
+    "sourceId": "devto",
+    "sourceType": "devto",
+    "title": "Simple Benchmark Review: Ollama on Jetson Nano",
+    "summary": "Previous Related Post: Part 1      This particular rabbit hole was created due to a previous...",
+    "url": "https://dev.to/annavi11arrea1/simple-benchmark-review-ollama-on-jetson-nano-5gee",
+    "publishedAt": "2026-07-12T05:43:01Z",
+    "language": "en",
+    "rawContent": "Previous Related Post: Part 1      This particular rabbit hole was created due to a previous...",
+    "rawContentType": "article",
+    "metadata": {
+      "reactionsCount": 2,
+      "tags": [
+        "ai",
+        "webdev",
+        "nvidia",
+        "productivity"
+      ],
+      "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fa2vq7v2wcc6jon4u5xgq.png"
+    }
+  },
+  {
+    "sourceId": "devto",
+    "sourceType": "devto",
+    "title": "Race Recap Radio — I turned my 10K into a hype sports broadcast",
+    "summary": "This is a submission for Weekend Challenge: Passion Edition           What I Built   Why do I like...",
+    "url": "https://dev.to/imkarthikeyan/race-recap-radio-i-turned-my-10k-into-a-hype-sports-broadcast-260j",
+    "publishedAt": "2026-07-11T17:55:00Z",
+    "language": "en",
+    "rawContent": "This is a submission for Weekend Challenge: Passion Edition           What I Built   Why do I like...",
+    "rawContentType": "article",
+    "metadata": {
+      "reactionsCount": 0,
+      "tags": [
+        "devchallenge",
+        "weekendchallenge",
+        "ai",
+        "elevenlabs"
+      ],
+      "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fvys6yh229x8flrqbgasc.png"
+    }
+  },
+  {
+    "sourceId": "devto",
+    "sourceType": "devto",
+    "title": "One channel decided whether my multi-agent RL agents learned at all",
+    "summary": "I have a small cooperative multi-agent reinforcement-learning setup: eight agents on a 100×100 grid,...",
+    "url": "https://dev.to/rakib-nyc/one-channel-decided-whether-my-multi-agent-rl-agents-learned-at-all-4051",
+    "publishedAt": "2026-07-12T05:37:07Z",
+    "language": "en",
+    "rawContent": "I have a small cooperative multi-agent reinforcement-learning setup: eight agents on a 100×100 grid,...",
+    "rawContentType": "article",
+    "metadata": {
+      "reactionsCount": 0,
+      "tags": [
+        "machinelearning",
+        "ai",
+        "rust"
+      ],
+      "coverImage": null
+    }
+  },
+  {
+    "sourceId": "hn",
+    "sourceType": "hn",
+    "title": "Under federal rule, colleges must leave grads better off or lose financial aid",
+    "summary": "Under federal rule, colleges must leave grads better off or lose financial aid",
+    "url": "https://www.npr.org/2026/06/30/nx-s1-5835631/turner-camhi-do-no-harm-college-loans",
+    "publishedAt": "2026-07-12T04:00:14Z",
+    "language": "en",
+    "rawContent": "Under federal rule, colleges must leave grads better off or lose financial aid",
+    "rawContentType": "discussion",
+    "metadata": {
+      "score": 48,
+      "commentsCount": 66
+    }
+  },
+  {
+    "sourceId": "github",
+    "sourceType": "github",
+    "title": "langchain-ai/langchain: Build context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.",
+    "summary": "Build context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.",
+    "url": "https://github.com/langchain-ai/langchain",
+    "publishedAt": "2026-07-10T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "langchain-ai/langchain\nBuild context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.\nStars: 95000 Forks: 15500 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 95000,
+      "forks": 15500,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "sourceId": "github",
+    "sourceType": "github",
+    "title": "crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.",
+    "summary": "Framework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "crewAIInc/crewAI\nFramework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.\nStars: 28000 Forks: 3900 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 28000,
+      "forks": 3900,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "sourceId": "github",
+    "sourceType": "github",
+    "title": "ggerganov/llama.cpp: LLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.",
+    "summary": "LLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.",
+    "url": "https://github.com/ggerganov/llama.cpp",
+    "publishedAt": "2026-07-08T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "ggerganov/llama.cpp\nLLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.\nStars: 68000 Forks: 9700 Language: C++",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 68000,
+      "forks": 9700,
+      "repoLanguage": "C++"
+    }
+  },
+  {
+    "sourceId": "github",
+    "sourceType": "github",
+    "title": "microsoft/autogen: Enable Next-Gen Large Language Model Applications via multi-agent conversation framework.",
+    "summary": "Enable Next-Gen Large Language Model Applications via multi-agent conversation framework.",
+    "url": "https://github.com/microsoft/autogen",
+    "publishedAt": "2026-07-11T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "microsoft/autogen\nEnable Next-Gen Large Language Model Applications via multi-agent conversation framework.\nStars: 35000 Forks: 5100 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 35000,
+      "forks": 5100,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "sourceId": "github",
+    "sourceType": "github",
+    "title": "All-Hands-AI/OpenHands: Open-source autonomous coding agent. Write code, run commands, browse the web, and more.",
+    "summary": "Open-source autonomous coding agent. Write code, run commands, browse the web, and more.",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "publishedAt": "2026-07-07T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "All-Hands-AI/OpenHands\nOpen-source autonomous coding agent. Write code, run commands, browse the web, and more.\nStars: 42000 Forks: 4600 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 42000,
+      "forks": 4600,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "sourceId": "github",
+    "sourceType": "github",
+    "title": "huggingface/transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.",
+    "summary": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.",
+    "url": "https://github.com/huggingface/transformers",
+    "publishedAt": "2026-07-06T00:00:00.000Z",
+    "language": "en",
+    "rawContent": "huggingface/transformers\nState-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.\nStars: 132000 Forks: 26000 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 132000,
+      "forks": 26000,
+      "repoLanguage": "Python"
+    }
+  }
+]

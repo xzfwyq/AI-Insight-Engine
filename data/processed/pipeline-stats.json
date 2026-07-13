@@ -1,0 +1,53 @@
+{
+  "startedAt": "2026-07-13T07:58:32.763Z",
+  "steps": [
+    {
+      "step": "fetch",
+      "duration": 5.233,
+      "errors": []
+    },
+    {
+      "step": "clean",
+      "duration": 0.009,
+      "input": 25,
+      "output": 25
+    },
+    {
+      "step": "extract",
+      "duration": 232.198,
+      "total": 25,
+      "success": 25,
+      "failed": 0,
+      "firstTrySuccess": 24,
+      "retriedSuccess": 1,
+      "totalAttempts": 26,
+      "cacheStats": {
+        "enabled": true,
+        "model": "glm-5.2-tc-pfs"
+      },
+      "tokenUsage": {
+        "input_tokens": 34104,
+        "output_tokens": 31612,
+        "cache_read_input_tokens": 21312,
+        "cache_creation_input_tokens": 0,
+        "totalTokens": 87028,
+        "cacheHitRate": 0.3846,
+        "costEstimateUSD": 0.5829,
+        "costWithoutCacheUSD": 0.6404,
+        "savingsUSD": 0.0575,
+        "savingsPercent": 9,
+        "pricingModel": "claude-sonnet-4-6-public"
+      }
+    },
+    {
+      "step": "aggregate",
+      "duration": 73.709
+    },
+    {
+      "step": "report",
+      "duration": 0.04
+    }
+  ],
+  "finishedAt": "2026-07-13T08:03:43.959Z",
+  "totalDuration": 311.196
+}

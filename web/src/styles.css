@@ -1,0 +1,120 @@
+:root {
+  --color-bg: #0f1419;
+  --color-card: #1a1f2e;
+  --color-border: #2a3142;
+  --color-text: #e6e6e6;
+  --color-text-secondary: #8b95a7;
+  --color-primary: #4d9eff;
+  --color-positive: #52c41a;
+  --color-negative: #ff4d4f;
+  --color-neutral: #8c8c8c;
+  --color-zh: #f5a623;
+  --color-en: #4d9eff;
+  --radius: 8px;
+  --spacing: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: var(--spacing);
+}
+
+.grid-kpi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gap {
+  gap: var(--spacing);
+}
+
+.mt {
+  margin-top: var(--spacing);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-positive {
+  color: var(--color-positive);
+}
+
+.text-negative {
+  color: var(--color-negative);
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: var(--color-border);
+}
+
+.badge-zh {
+  background: rgba(245, 166, 35, 0.2);
+  color: var(--color-zh);
+}
+
+.badge-en {
+  background: rgba(77, 158, 255, 0.2);
+  color: var(--color-en);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4258;
+}

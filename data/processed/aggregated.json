@@ -1,0 +1,2373 @@
+{
+  "generatedAt": "2026-07-13T08:03:43.915Z",
+  "totalEvents": 25,
+  "languageDistribution": {
+    "zh": 7,
+    "en": 18
+  },
+  "topEntities": [
+    {
+      "name": "Python",
+      "type": "language",
+      "count": 5
+    },
+    {
+      "name": "OpenAI",
+      "type": "company",
+      "count": 2
+    },
+    {
+      "name": "Hugging Face",
+      "type": "company",
+      "count": 2
+    },
+    {
+      "name": "AI",
+      "type": "technology",
+      "count": 2
+    },
+    {
+      "name": "LLM",
+      "type": "technology",
+      "count": 2
+    },
+    {
+      "name": "VaseMuseum",
+      "type": "framework",
+      "count": 1
+    },
+    {
+      "name": "VaseAgent",
+      "type": "method",
+      "count": 1
+    },
+    {
+      "name": "Vision-Language Models (VLMs)",
+      "type": "technology",
+      "count": 1
+    },
+    {
+      "name": "GRPO-style selection mechanism",
+      "type": "method",
+      "count": 1
+    },
+    {
+      "name": "KronQ",
+      "type": "method",
+      "count": 1
+    },
+    {
+      "name": "GPTQ",
+      "type": "method",
+      "count": 1
+    },
+    {
+      "name": "GPTAQ",
+      "type": "method",
+      "count": 1
+    },
+    {
+      "name": "LLaMA-3-70B",
+      "type": "product",
+      "count": 1
+    },
+    {
+      "name": "Kronecker-factored Hessian",
+      "type": "method",
+      "count": 1
+    },
+    {
+      "name": "WikiText-2",
+      "type": "benchmark",
+      "count": 1
+    }
+  ],
+  "topicDistribution": [
+    {
+      "name": "LLM",
+      "count": 16
+    },
+    {
+      "name": "其他",
+      "count": 15
+    },
+    {
+      "name": "Agent",
+      "count": 6
+    },
+    {
+      "name": "多模态",
+      "count": 5
+    },
+    {
+      "name": "开源模型",
+      "count": 4
+    },
+    {
+      "name": "训练方法",
+      "count": 3
+    },
+    {
+      "name": "开源框架",
+      "count": 3
+    },
+    {
+      "name": "评测基准",
+      "count": 2
+    },
+    {
+      "name": "记忆机制",
+      "count": 2
+    },
+    {
+      "name": "商业化",
+      "count": 2
+    },
+    {
+      "name": "具身智能",
+      "count": 2
+    },
+    {
+      "name": "本地推理",
+      "count": 2
+    },
+    {
+      "name": "编程能力",
+      "count": 2
+    },
+    {
+      "name": "政策监管",
+      "count": 1
+    },
+    {
+      "name": "知识产权",
+      "count": 1
+    }
+  ],
+  "sentimentOverview": {
+    "positive": 15,
+    "negative": 3,
+    "neutral": 7,
+    "avgScore": 0.45332
+  },
+  "topEvents": [
+    {
+      "id": "techcrunch_a1b3c2d4e5f67890",
+      "title": "Apple sues OpenAI over alleged trade secret theft",
+      "significance": 0.95,
+      "reason": "苹果指控OpenAI高层授意窃取商业机密，两大科技巨头知识产权战正式开打，或重塑AI行业人才流动与合规边界"
+    },
+    {
+      "id": "36kr_4f7a2c9e1b3d5860",
+      "title": "对话Om AI赵天成：多年坚守，押注物理AI原生的「流式」未来",
+      "significance": 0.85,
+      "reason": "Om AI发布全球首个物理AI端侧流式多模态模型VLX，已在机器人、无人机、可穿戴设备等终端实现商业落地，开辟物理AI新赛道"
+    },
+    {
+      "id": "hf_papers_a3f7c2e91b8d4f60",
+      "title": "Long-Horizon-Terminal-Bench: 测试智能体在长程终端任务上的极限",
+      "significance": 0.8,
+      "reason": "15个前沿模型评测中最强者仅15.2%完成率，平均消耗990万token/任务，揭示Agent长程任务能力远未达标"
+    },
+    {
+      "id": "techcrunch_7a3f2c8e1b9d07e45",
+      "title": "Meta removes controversial AI feature on Instagram after backlash",
+      "significance": 0.75,
+      "reason": "Meta因用户强烈反对被迫下线Instagram AI功能，折射C端AI产品在隐私与用户信任上的脆弱性"
+    },
+    {
+      "id": "techcrunch_7a3f9c2e1b8d4a56",
+      "title": "Open source AI matters more than ever, according to Hugging Face's Clem Delangue",
+      "significance": 0.7,
+      "reason": "Hugging Face CEO称约半数财富500强企业使用其平台，企业从闭源转向开源AI成为反复验证的模式"
+    }
+  ],
+  "headline": "Apple起诉OpenAI窃取商业机密，物理AI端侧流式多模态首次落地",
+  "keyPoints": [
+    {
+      "text": "Apple起诉OpenAI涉嫌窃取商业机密并指控高层授意，AI巨头间知识产权博弈升级，或重塑人才流动与合规边界",
+      "eventId": "techcrunch_a1b3c2d4e5f67890"
+    },
+    {
+      "text": "Om AI发布全球首个物理AI端侧流式多模态模型VLX，已在机器人、无人机等终端落地，物理AI从实验走向商业化",
+      "eventId": "36kr_4f7a2c9e1b3d5860"
+    },
+    {
+      "text": "Long-Horizon-Terminal-Bench评测显示最强模型仅15.2%完成率，Agent长程任务能力远未达到实用水平",
+      "eventId": "hf_papers_a3f7c2e91b8d4f60"
+    }
+  ],
+  "trends": [
+    {
+      "dimension": "技术",
+      "bullets": [
+        {
+          "text": "KronQ在LLaMA-3-70B的2比特量化中实现7.93困惑度，而GPTQ和GPTAQ出现发散或退化(事件2)",
+          "eventId": "hf_papers_a4f3c2e91b0d7e5f"
+        },
+        {
+          "text": "Long-Horizon-Terminal-Bench显示最强Agent仅15.2%完成率，平均消耗990万token/任务，长程能力严重不足(事件3)",
+          "eventId": "hf_papers_a3f7c2e91b8d4f60"
+        },
+        {
+          "text": "Om AI VLX提出端侧原生流式多模态架构，打通\"持续感知+精准定位+行动决策\"物理AI闭环(事件13)",
+          "eventId": "36kr_4f7a2c9e1b3d5860"
+        }
+      ]
+    },
+    {
+      "dimension": "应用",
+      "bullets": [
+        {
+          "text": "OpenAI招聘家庭场景专属PM，ChatGPT向护理人员和老年人群延伸，消费级AI深入家庭(事件6)",
+          "eventId": "techcrunch_7a3f2c9e1b4d6058"
+        },
+        {
+          "text": "MOVA LINCO构建\"连接+存储+算力\"家庭AI基础设施，首款AI语音路由X1 Pro计划今年出海(事件11)",
+          "eventId": "36kr_a3f2b7c9d1e5f8a2"
+        },
+        {
+          "text": "光之跃迁聚焦消费级四足机器人，瞄准欧美家庭和银发群体，计划2027年CES发布量产(事件12)",
+          "eventId": "36kr_b7e3a1f9c4d2058a"
+        }
+      ]
+    },
+    {
+      "dimension": "竞争",
+      "bullets": [
+        {
+          "text": "Apple起诉OpenAI窃取商业机密并指控高层授意，AI行业知识产权战正式打响(事件8)",
+          "eventId": "techcrunch_a1b3c2d4e5f67890"
+        },
+        {
+          "text": "Meta因用户强烈反对被迫下线Instagram AI功能，C端AI产品信任危机凸显(事件7)",
+          "eventId": "techcrunch_7a3f2c8e1b9d07e45"
+        },
+        {
+          "text": "SpaceX与Anthropic签署AI算力协议引发支持者质疑，马斯克以\"SpaceX价值超地球\"回应(事件16)",
+          "eventId": "zhihu_8f3a2b1c9d7e5f4a"
+        }
+      ]
+    },
+    {
+      "dimension": "资本",
+      "bullets": [
+        {
+          "text": "MOVA LINCO完成数千万元天使轮，资金用于AI算法研发及全球化渠道布局(事件11)",
+          "eventId": "36kr_a3f2b7c9d1e5f8a2"
+        },
+        {
+          "text": "光之跃迁完成近五千万元天使轮，正轩领投，消费级四足机器人赛道获资本关注(事件12)",
+          "eventId": "36kr_b7e3a1f9c4d2058a"
+        },
+        {
+          "text": "Hugging Face称约半数财富500强企业使用其平台，企业从闭源转向开源AI成为趋势(事件9)",
+          "eventId": "techcrunch_7a3f9c2e1b8d4a56"
+        }
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "title": "AI行业知识产权诉讼风险加剧",
+      "description": "Apple起诉OpenAI涉嫌窃取商业机密，AI行业人才流动与知识产权边界面临重新审视，相关企业需加强员工竞业与商业秘密合规审查",
+      "eventId": "techcrunch_a1b3c2d4e5f67890"
+    },
+    {
+      "title": "C端AI产品用户信任危机",
+      "description": "Meta被迫下线Instagram AI功能，反映AI使用个人内容训练/生成引发公众反感，C端AI应用需将隐私设计与用户控制置于产品核心",
+      "eventId": "techcrunch_7a3f2c8e1b9d07e45"
+    },
+    {
+      "title": "Agent能力被高估的风险",
+      "description": "Long-Horizon-Terminal-Bench显示最强模型仅15.2%完成率，当前Agent在长程复杂任务上远未实用，过度宣传可能引发投资泡沫与信任落差",
+      "eventId": "hf_papers_a3f7c2e91b8d4f60"
+    }
+  ],
+  "opportunities": [
+    {
+      "title": "物理AI端侧落地窗口期",
+      "description": "Om AI VLX率先实现端侧流式多模态商业闭环，机器人、无人机、可穿戴设备厂商可借此切入物理AI赛道，2026年行业正从数字AI转向物理AI",
+      "eventId": "36kr_4f7a2c9e1b3d5860"
+    },
+    {
+      "title": "家庭AI基础设施蓝海",
+      "description": "MOVA LINCO与OpenAI同时布局家庭场景，AI路由器/NAS/算力盒子赛道处于早期阶段，硬件"
+    }
+  ],
+  "trendAnalysis": "Apple起诉OpenAI窃取商业机密，物理AI端侧流式多模态首次落地",
+  "riskOpportunity": "",
+  "riskAlerts": [
+    {
+      "id": "techcrunch_a1b3c2d4e5f67890",
+      "title": "Apple sues OpenAI over alleged trade secret theft",
+      "summary": "苹果公司对OpenAI提起诉讼,指控其涉嫌窃取商业机密。苹果声称相关不当行为由OpenAI高层领导授意,其中包括一名长期任职的前员工。此举标志着两大科技巨头在AI领域竞争进一步升级,涉及知识产权与商业机密保护的法律博弈。",
+      "riskLevel": "high",
+      "reason": "负面舆情",
+      "sentiment": {
+        "direction": "negative",
+        "score": -1,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": [
+          "起诉",
+          "诉讼",
+          "sue"
+        ]
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Apple",
+          "OpenAI"
+        ]
+      },
+      "significance": 0.95
+    },
+    {
+      "id": "techcrunch_7a3f9c2e1b8d4a56",
+      "title": "Open source AI matters more than ever, according to Hugging Face's Clem Delangue",
+      "summary": "Hugging Face CEO Clem Delangue 表示开源AI正在蓬勃发展。Hugging Face 近年来已成长为类似AI领域GitHub的平台，AI开发者可以在上面分享和下载开源模型与数据集。该平台目前已被约一半的财富500强企业使用。Delangue 反复观察到同一模式：企业最初尝试闭源方案后，最终往往会转向开源AI。该播客由 Rebecca Bellan 和 Theresa Loconsolo 主持，聚焦开源AI的重要性与行业趋势。",
+      "riskLevel": "medium",
+      "reason": "行业级影响",
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "蓬勃发展"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "long-term",
+        "affectedEntities": [
+          "Hugging Face",
+          "Fortune 500"
+        ]
+      },
+      "significance": 0.7
+    },
+    {
+      "id": "36kr_4f7a2c9e1b3d5860",
+      "title": "对话Om AI赵天成：多年坚守，押注物理AI原生的「流式」未来",
+      "summary": "Om AI联汇发布全球首个面向物理AI的端侧流式多模态模型系列VLX，首次提出\"端侧原生流式多模态\"架构，从设计之初即针对端侧算力约束，打通\"持续感知+精准定位+行动决策\"的物理AI完整闭环。CEO兼首席科学家赵天成博士毕业于CMU语言技术所，自2019年创业以来坚守视觉+语言流式多模态路线，未追逐生成式AI热潮。VLX已在机器人、无人机、可穿戴设备、安防摄像头等物理终端落地，实现从被动执行到主动适应场景的跨越。2026年AI行业正从数字AI转向物理AI，多条技术路线并存，Om AI已率先完成从仿真实验到产业落地的商业闭环。",
+      "riskLevel": "medium",
+      "reason": "行业级影响",
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "发布",
+          "热潮",
+          "押注"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Om AI联汇",
+          "VLX",
+          "物理AI行业"
+        ]
+      },
+      "significance": 0.85
+    },
+    {
+      "id": "hf_papers_a3f7c2e91b8d4f60",
+      "title": "Long-Horizon-Terminal-Bench: 测试智能体在长程终端任务上的极限",
+      "summary": "研究者提出Long-Horizon-Terminal-Bench，一个包含46个长程终端任务、覆盖9个类别的基准测试，涵盖实验复现、软件工程、多模态分析、交互式游戏和科学计算等领域。与以往仅评估最终结果的终端基准不同，该基准将每个任务分解为细粒度子任务，提供密集的中间奖励和部分评分，能更全面地衡量智能体的长程规划、长上下文管理和迭代调试能力。任务通常需要数百轮交互和数分钟至数小时的执行时间。研究团队评估了15个前沿模型，发现智能体平均每个任务消耗990万token、约231轮交互和85.3分钟执行时间，且表现最强的模型仅取得15.2%的成绩，表明现有智能体在长程任务上仍有显著不足。",
+      "riskLevel": "low",
+      "reason": "高重要性",
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Long-Horizon-Terminal-Bench",
+          "Terminal-Bench"
+        ]
+      },
+      "significance": 0.8
+    }
+  ],
+  "enrichedEvents": [
+    {
+      "id": "hf_papers_7c3a8f2d1b5e9a04",
+      "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
+      "summary": "论文提出VaseMuseum，一个面向古希腊陶器的轻量级模块化多模态智能体框架，用于构建数字化智能博物馆。该框架结合交互式虚拟博物馆与VaseAgent，支持2D图像和3D文物的多模态感知、3D感知推理、外部知识检索及推理时可靠性控制。VaseAgent从权威网络和博物馆知识源检索证据，通过源级控制选择多样且可验证的证据，响应级控制则检查生成声明与证据池的一致性，在证据不足时鼓励中性且受证据约束的回答。此外，框架采用无需训练的GRPO风格选择机制，优先选择具有有效引用的响应。",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "Hugging Face Papers",
+        "url": "https://huggingface.co/papers/2607.06374",
+        "type": "hf_papers",
+        "metadata": {
+          "authors": [
+            "Jiazi Wang",
+            "Nonghai Zhang",
+            "Qiushi Xie",
+            "Zeyu Zhang",
+            "Yufeng Chen"
+          ],
+          "paperId": "2607.06374"
+        }
+      },
+      "entities": [
+        {
+          "name": "VaseMuseum",
+          "type": "framework",
+          "role": "subject"
+        },
+        {
+          "name": "VaseAgent",
+          "type": "method",
+          "role": "subject"
+        },
+        {
+          "name": "Vision-Language Models (VLMs)",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "GRPO-style selection mechanism",
+          "type": "method",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "多模态",
+          "originalName": "多模态",
+          "confidence": 0.95
+        },
+        {
+          "name": "其他",
+          "originalName": "VLM",
+          "confidence": 0.9
+        },
+        {
+          "name": "Agent",
+          "originalName": "Agent",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "支持"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "VaseMuseum",
+          "VaseAgent"
+        ]
+      },
+      "rawContent": "Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second, when the available evidence is incomplete, noisy, or ambiguous, VLMs often produce confident but unsupported answers instead of calibrated uncertainty. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery. VaseMuseum combines an interactive virtual museum with VaseAgent, which supports both 2D images and 3D artifacts through multimodal perception, 3D-aware reasoning, external knowledge retrieval, and inference-time reliability control. Specifically, VaseAgent retrieves evidence from authoritative web and museum knowledge sources, and source-level control selects diverse and verifiable evidence before generation. Meanwhile, response-level control checks generated claims against the evidence pool and encourages neutral, evidence-bounded answers when support is insufficient or conflicting. Moreover, a training-free GRPO-style selection mechanism favors responses with valid references.",
+      "rawContentType": "abstract",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.4
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "hf_papers_a4f3c2e91b0d7e5f",
+      "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
+      "summary": "KronQ是一种新的大语言模型训练后量化（PTQ）框架，通过引入梯度协方差改进量化流程。该框架基于Kronecker分解Hessian近似，使量化损失同时依赖激活和梯度协方差。KronQ在两个层面发力：一是引入双向不相干处理，将输入侧随机旋转扩展到输出维度，降低输入和输出维度上的权重幅度方差；二是提出基于梯度和激活Hessian迹的层间混合精度分配敏感性指标。在LLaMA-3-70B的2比特仅权重量化实验中，GPTQ和GPTAQ出现发散或退化（WikiText-2困惑度超2000），而KronQ实现了7.93的困惑度。",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "Hugging Face Papers",
+        "url": "https://huggingface.co/papers/2607.07964",
+        "type": "hf_papers",
+        "metadata": {
+          "authors": [
+            "Donghyun Lee",
+            "Yuhang Li",
+            "Ruokai Yin",
+            "Priyadarshini Panda"
+          ],
+          "paperId": "2607.07964"
+        }
+      },
+      "entities": [
+        {
+          "name": "KronQ",
+          "type": "method",
+          "role": "subject"
+        },
+        {
+          "name": "GPTQ",
+          "type": "method",
+          "role": "context"
+        },
+        {
+          "name": "GPTAQ",
+          "type": "method",
+          "role": "context"
+        },
+        {
+          "name": "LLaMA-3-70B",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "Kronecker-factored Hessian",
+          "type": "method",
+          "role": "context"
+        },
+        {
+          "name": "WikiText-2",
+          "type": "benchmark",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "LLM量化",
+          "confidence": 0.98
+        },
+        {
+          "name": "其他",
+          "originalName": "模型压缩",
+          "confidence": 0.92
+        },
+        {
+          "name": "训练方法",
+          "originalName": "Post-Training Quantization",
+          "confidence": 0.95
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "GPTQ",
+          "GPTAQ",
+          "LLaMA-3-70B"
+        ]
+      },
+      "rawContent": "Post-training quantization (PTQ) is a widely adopted technique for compressing large language models (LLMs) without retraining. Existing second-order PTQ methods, including GPTQ, construct quantization objectives exclusively from input activation statistics, effectively assuming that all output channels contribute equally to the layer-wise reconstruction objective. We propose KronQ, a PTQ framework that challenges this assumption by introducing the gradient covariance into the quantization pipeline. Under the Kronecker-factored Hessian approximation, the quantization loss depends jointly on both the activation and gradient covariances, and KronQ exploits this at two complementary levels. (1) KronQ introduces bidirectional incoherence processing, extending the existing input-side random rotation to the output dimension using the gradient covariance, reducing weight magnitude variance across both input and output dimensions. (2) KronQ derives a new sensitivity metric for inter-layer mixed-precision allocation, driven by the gradient and activation Hessian traces. Notably, in the case of 2-bit weight-only quantization on LLaMA-3-70B, while GPTQ and GPTAQ diverge or produce degenerate quantizations (>2000 perplexity on WikiText-2), KronQ achieves 7.93 perplexity.",
+      "rawContentType": "abstract",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "hf_papers_a3f7c2e91b8d4f60",
+      "title": "Long-Horizon-Terminal-Bench: 测试智能体在长程终端任务上的极限",
+      "summary": "研究者提出Long-Horizon-Terminal-Bench，一个包含46个长程终端任务、覆盖9个类别的基准测试，涵盖实验复现、软件工程、多模态分析、交互式游戏和科学计算等领域。与以往仅评估最终结果的终端基准不同，该基准将每个任务分解为细粒度子任务，提供密集的中间奖励和部分评分，能更全面地衡量智能体的长程规划、长上下文管理和迭代调试能力。任务通常需要数百轮交互和数分钟至数小时的执行时间。研究团队评估了15个前沿模型，发现智能体平均每个任务消耗990万token、约231轮交互和85.3分钟执行时间，且表现最强的模型仅取得15.2%的成绩，表明现有智能体在长程任务上仍有显著不足。",
+      "publishedAt": "2026-07-09T00:00:00Z",
+      "language": "en",
+      "source": {
+        "name": "Hugging Face Papers",
+        "url": "https://huggingface.co/papers/2607.08964",
+        "type": "hf_papers",
+        "metadata": {
+          "authors": [
+            "Zongxia Li",
+            "Zhongzhi Li",
+            "Yucheng Shi",
+            "Ruhan Wang",
+            "Junyao Yang"
+          ],
+          "paperId": "2607.08964"
+        }
+      },
+      "entities": [
+        {
+          "name": "Long-Horizon-Terminal-Bench",
+          "type": "benchmark",
+          "role": "subject"
+        },
+        {
+          "name": "Terminal-Bench",
+          "type": "benchmark",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "Agent",
+          "originalName": "Agent评估",
+          "confidence": 0.95
+        },
+        {
+          "name": "评测基准",
+          "originalName": "Benchmark",
+          "confidence": 0.95
+        },
+        {
+          "name": "记忆机制",
+          "originalName": "长程任务",
+          "confidence": 0.9
+        },
+        {
+          "name": "其他",
+          "originalName": "终端任务",
+          "confidence": 0.85
+        },
+        {
+          "name": "训练方法",
+          "originalName": "强化学习",
+          "confidence": 0.6
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Long-Horizon-Terminal-Bench",
+          "Terminal-Bench"
+        ]
+      },
+      "rawContent": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2%",
+      "rawContentType": "abstract",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": -0.1
+      },
+      "_significance": 0.8,
+      "heatScore": 48
+    },
+    {
+      "id": "hf_papers_a3f2c9e1b7d4f8a6",
+      "title": "Phone Segmentation and Recognition through Phonological Activation Mapping",
+      "summary": "本文提出了基于自监督语音模型(S3M)的音素分割与识别统一方法——S3M-based Phonological Activation Mapping (SPAM)。该方法将每个S3M表示帧映射为音系特征激活向量(如浊音、鼻音等),并在此基础上引入两个轻量级、无需梯度下降的预测头:识别头和分割头。该方法仅需不到一分钟的音素标注数据,即可在训练中泛化到未见过的音素,在多种数据集上均取得了优异的分割与识别性能。",
+      "publishedAt": "2026-07-10T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "Hugging Face Papers",
+        "url": "https://huggingface.co/papers/2607.09020",
+        "type": "hf_papers",
+        "metadata": {
+          "authors": [
+            "Shikhar Bharadwaj",
+            "Kwanghee Choi",
+            "Stephen McIntosh",
+            "Chin-Jou Li",
+            "Eunjung Yeo"
+          ],
+          "paperId": "2607.09020"
+        }
+      },
+      "entities": [
+        {
+          "name": "SPAM (S3M-based Phonological Activation Mapping)",
+          "type": "method",
+          "role": "subject"
+        },
+        {
+          "name": "S3M (self-supervised speech models)",
+          "type": "method",
+          "role": "context"
+        },
+        {
+          "name": "Phone Segmentation and Recognition through Phonological Activation Mapping",
+          "type": "paper",
+          "role": "subject"
+        }
+      ],
+      "topics": [
+        {
+          "name": "多模态",
+          "originalName": "语音识别",
+          "confidence": 0.95
+        },
+        {
+          "name": "其他",
+          "originalName": "自监督学习",
+          "confidence": 0.9
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "下降"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "SPAM (S3M-based Phonological Activation Mapping)",
+          "S3M (self-supervised speech models)"
+        ]
+      },
+      "rawContent": "Phone segmentation and recognition are inherently related tasks, yet modern approaches typically model them separately. We argue that phonetic structure is already latent in the representations of self-supervised speech models (S3Ms), and one only needs to steer them to solve both tasks. We leverage S3M-based Phonological Activation Mapping (SPAM), which maps each S3M representation frame to a vector of phonological feature activations, such as voicing and nasality. On top of SPAM, we introduce two simple but effective lightweight, gradient-descent-free prediction heads: a recognition head and a segmentation head. Our method requires less than a minute of phonetic transcriptions, and generalizes to unseen phones during training. Across a diverse range of datasets, our approach attains strong segmentation and recognition performance.",
+      "rawContentType": "abstract",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "hf_papers_8f3a2c1e9b7d4f60",
+      "title": "From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models",
+      "summary": "本文提出ReChannel方法，利用大规模文本生成图像模型进行密集预测任务。作者指出现有方法将深度、法线、透明度遮罩等标注编码到RGB训练的VAE潜在空间再解码，继承了不必要的生成输出接口。ReChannel保留VAE编码器但移除目标端解码器，通过任务LoRA适配冻结的DiT模型，使用约33K参数的共享token局部线性头将每个token映射到像素空间patch。基于FLUX-Klein在六项密集预测任务和十余个基准上评估，在无trimap抠图、KITTI深度估计和指代分割任务上达到新的最优水平。",
+      "publishedAt": "2026-07-09T00:00:00Z",
+      "language": "en",
+      "source": {
+        "name": "Hugging Face Papers",
+        "url": "https://huggingface.co/papers/2607.06553",
+        "type": "hf_papers",
+        "metadata": {
+          "authors": [
+            "Zanyi Wang",
+            "Xin Lin",
+            "Haodong Li",
+            "Dengyang Jiang",
+            "Yijiang Li"
+          ],
+          "paperId": "2607.06553"
+        }
+      },
+      "entities": [
+        {
+          "name": "ReChannel",
+          "type": "method",
+          "role": "subject"
+        },
+        {
+          "name": "FLUX-Klein",
+          "type": "framework",
+          "role": "context"
+        },
+        {
+          "name": "DiT",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "VAE",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "KITTI",
+          "type": "benchmark",
+          "role": "object"
+        },
+        {
+          "name": "Text-to-Image Models",
+          "type": "technology",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "其他",
+          "originalName": "Dense Prediction",
+          "confidence": 0.95
+        },
+        {
+          "name": "多模态",
+          "originalName": "Computer Vision",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "ReChannel",
+          "FLUX-Klein"
+        ]
+      },
+      "rawContent": "Large-scale text-to-image models are attractive backbones for dense prediction because RGB generation pretraining learns rich semantic, structural, and geometric priors. Existing generative and editing approaches reuse these priors by casting dense prediction as target generation: annotations such as depth, normals, alpha mattes, masks, and heatmaps are encoded into an RGB-trained VAE latent space and decoded back as image-like targets. We argue this inherits more of the generative output interface than dense prediction requires: unlike RGB synthesis, dense prediction asks for pixel-correct, task-native fields on the same image plane, not new RGB content to be rendered. Our key observation is that a pretrained DiT already organizes RGB inputs through a patch-to-token-to-patch lattice on the image plane, so each token indexes a fixed output patch whose channels can carry task-native quantities instead of RGB appearance. We instantiate this as ReChannel: we keep the VAE encoder for the DiT's input distribution but drop the target-side decoder, adapt the frozen DiT with task LoRA, and map each token to its p x p x K_t pixel-space patch through a shared token-local linear head--about 33K parameters, no spatial mixing. Using FLUX-Klein, we evaluate on six dense prediction tasks and over a dozen benchmarks. This minimal interface sets new state-of-the-art on trimap-free matting, KITTI depth, and referring segmentation, and stays competitive on normals, saliency, and pose.",
+      "rawContentType": "abstract",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "techcrunch_7a3f2c9e1b4d6058",
+      "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+      "summary": "OpenAI正在为ChatGPT招聘一名专职产品经理，负责为家庭、护理人员和老年人群组打造专属使用体验。这一招聘信息显示，OpenAI正将ChatGPT进一步推向家庭场景，拓展其在日常生活中的应用深度。此举标志着OpenAI在消费级AI产品战略上的新方向，意图让ChatGPT成为家庭生活中更不可或缺的工具，覆盖从儿童到老年人的多代际用户需求。",
+      "publishedAt": "2026-07-11T14:13:00Z",
+      "language": "en",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+        "type": "techcrunch",
+        "metadata": {
+          "author": "Jagmeet Singh",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "OpenAI",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "ChatGPT",
+          "type": "product",
+          "role": "subject"
+        },
+        {
+          "name": "families",
+          "type": "organization",
+          "role": "beneficiary"
+        },
+        {
+          "name": "caregivers",
+          "type": "organization",
+          "role": "beneficiary"
+        },
+        {
+          "name": "older adults",
+          "type": "organization",
+          "role": "beneficiary"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "AI产品策略",
+          "confidence": 0.9
+        },
+        {
+          "name": "其他",
+          "originalName": "ChatGPT",
+          "confidence": 0.95
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "company",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "OpenAI",
+          "ChatGPT"
+        ]
+      },
+      "rawContent": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": 0.1
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "techcrunch_a3f2c8e1b9d07e45",
+      "title": "Meta removes controversial AI feature on Instagram after backlash",
+      "summary": "Meta宣布从Instagram上移除一项引发争议的AI功能。该公司在博客文章中表示，其初衷是提供一个有用的创意工具，并让用户能够控制自己的公开内容是否可以以此方式被引用。但Meta承认收到了大量用户反馈，认为该功能\"没有达到预期效果\"，因此已将其下线。这一决定是在用户和公众对该功能产生强烈反对后做出的。该事件反映了大型科技公司在推出AI相关功能时面临的隐私和用户信任挑战，也凸显了公众对AI使用个人内容进行训练或生成的敏感性。",
+      "publishedAt": "2026-07-10T23:55:07Z",
+      "language": "en",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+        "type": "techcrunch",
+        "metadata": {
+          "author": "Lucas Ropek",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "Meta",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "Instagram",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "AI feature",
+          "type": "technology",
+          "role": "object"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "AI伦理",
+          "confidence": 0.95
+        },
+        {
+          "name": "政策监管",
+          "originalName": "用户隐私",
+          "confidence": 0.9
+        },
+        {
+          "name": "其他",
+          "originalName": "社交媒体",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "negative",
+        "score": -1,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": [
+          "争议"
+        ]
+      },
+      "impact": {
+        "scope": "consumer",
+        "timeHorizon": "immediate",
+        "affectedEntities": [
+          "Instagram",
+          "Meta"
+        ]
+      },
+      "rawContent": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "negative",
+        "score": -0.6
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "techcrunch_a1b3c2d4e5f67890",
+      "title": "Apple sues OpenAI over alleged trade secret theft",
+      "summary": "苹果公司对OpenAI提起诉讼,指控其涉嫌窃取商业机密。苹果声称相关不当行为由OpenAI高层领导授意,其中包括一名长期任职的前员工。此举标志着两大科技巨头在AI领域竞争进一步升级,涉及知识产权与商业机密保护的法律博弈。",
+      "publishedAt": "2026-07-10T21:00:29.000Z",
+      "language": "en",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+        "type": "techcrunch",
+        "metadata": {
+          "author": "Sarah Perez",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "Apple",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "OpenAI",
+          "type": "company",
+          "role": "object"
+        }
+      ],
+      "topics": [
+        {
+          "name": "知识产权",
+          "originalName": "知识产权",
+          "confidence": 0.95
+        },
+        {
+          "name": "LLM",
+          "originalName": "AI",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "negative",
+        "score": -1,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": [
+          "起诉",
+          "诉讼",
+          "sue"
+        ]
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Apple",
+          "OpenAI"
+        ]
+      },
+      "rawContent": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "negative",
+        "score": -0.6
+      },
+      "_significance": 0.95,
+      "heatScore": 57
+    },
+    {
+      "id": "techcrunch_7a3f9c2e1b8d4a56",
+      "title": "Open source AI matters more than ever, according to Hugging Face's Clem Delangue",
+      "summary": "Hugging Face CEO Clem Delangue 表示开源AI正在蓬勃发展。Hugging Face 近年来已成长为类似AI领域GitHub的平台，AI开发者可以在上面分享和下载开源模型与数据集。该平台目前已被约一半的财富500强企业使用。Delangue 反复观察到同一模式：企业最初尝试闭源方案后，最终往往会转向开源AI。该播客由 Rebecca Bellan 和 Theresa Loconsolo 主持，聚焦开源AI的重要性与行业趋势。",
+      "publishedAt": "2026-07-10T19:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+        "type": "techcrunch",
+        "metadata": {
+          "author": "Rebecca Bellan, Theresa Loconsolo",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "Hugging Face",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "Clem Delangue",
+          "type": "person",
+          "role": "subject"
+        },
+        {
+          "name": "GitHub",
+          "type": "company",
+          "role": "context"
+        },
+        {
+          "name": "Fortune 500",
+          "type": "organization",
+          "role": "beneficiary"
+        }
+      ],
+      "topics": [
+        {
+          "name": "开源模型",
+          "originalName": "开源AI",
+          "confidence": 0.95
+        },
+        {
+          "name": "LLM",
+          "originalName": "AI模型",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "蓬勃发展"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "long-term",
+        "affectedEntities": [
+          "Hugging Face",
+          "Fortune 500"
+        ]
+      },
+      "rawContent": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0.7,
+      "heatScore": 42
+    },
+    {
+      "id": "36kr_a3f9c7e1b2d45f08",
+      "title": "lululemon「割不动」中国人了",
+      "summary": "lululemon在中国市场面临品牌危机。6月中旬，lululemon在上海北外滩举办大型户外瑜伽活动，遭遇暴雨却未取消，让上千人在湿滑瑜伽垫上完成全套动作，被社交媒体诟病为\"矫揉造作\"\"不为用户着想\"，甚至被网友比作邪教仪式。此前\"长城大鼓\"事件仍在发酵，海外\"面料门\"反复上演，品牌势能崩塌快速传导至资本市场。2026年以来lululemon股价跌超43%，较2023年末最高点暴跌77%。创始人Chip Wilson一手打造的\"类宗教\"式社群营销正面临消费者反噬，这家\"中产收割机\"正在退潮。",
+      "publishedAt": "2026-07-13T03:07:43.000Z",
+      "language": "zh",
+      "source": {
+        "name": "36氪",
+        "url": "https://36kr.com/p/3893430641703429?f=rss",
+        "type": "36kr",
+        "metadata": {
+          "author": "谢芸子",
+          "category": "消费品牌"
+        }
+      },
+      "entities": [
+        {
+          "name": "lululemon",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "Chip Wilson",
+          "type": "person",
+          "role": "context"
+        },
+        {
+          "name": "Educator",
+          "type": "product",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "其他",
+          "originalName": "品牌营销",
+          "confidence": 0.95
+        }
+      ],
+      "sentiment": {
+        "direction": "negative",
+        "score": -1,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": [
+          "暴跌",
+          "危机"
+        ]
+      },
+      "impact": {
+        "scope": "company",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "lululemon"
+        ]
+      },
+      "rawContent": "作者 | 谢芸子 编辑 | 张帆 在中国市场，lululemon开始被人们拿着放大镜审视。6月中旬，lululemon在上海北外滩举办了一场大型户外瑜伽活动，中途遭遇暴雨。lululemon并未取消活动，而是让上千人在湿滑的瑜伽垫上完成了全套动作。现场画面被社交网络疯传。整齐划一的雨中静坐，被人们诟病为\"矫揉造作\"\"品牌不为用户着想\"，甚至被部分网友拿来与《周处除三害》中的邪教作对比。这一比喻的杀伤力是巨大的，lululemon最核心的商业密码恰恰是\"类宗教\"式的社群营销。创始人Chip Wilson在自传中解释过原因，希望门店员工不是推销员而是向顾客传递面料科技和健康生活方式的教育者。2026年以来，lululemon的股价跌超43%，较2023年末的最高点暴跌77%。",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "negative",
+        "score": -0.7
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "36kr_a3f2b7c9d1e5f8a2",
+      "title": "AI家庭智能硬件公司MOVA LINCO获数千万元天使轮融资，首款产品今年上线海外",
+      "summary": "威联机器人科技（深圳）有限公司（MOVA LINCO）近日完成数千万元天使轮融资，资金将用于AI算法研发、产品量产体系完善及全球化渠道布局。公司核心团队来自头部网络通信与智能硬件企业，以AI智能语音路由器、AI NAS及AI算力盒子三大品类构建\"连接+存储+算力\"家庭AI基础设施。首款产品AI智能语音路由X1 Pro内置定制语音芯片，支持自然语音交互控制全屋设备，支持Mesh组网。公司此前在CES 2026展出AI NAS UP6家庭私有云产品，首款产品计划今年上线海外市场。",
+      "publishedAt": "2026-07-13T03:00:00Z",
+      "language": "zh",
+      "source": {
+        "name": "36氪",
+        "url": "https://36kr.com/p/3879780282495236?f=rss",
+        "type": "36kr",
+        "metadata": {
+          "author": "黄楠",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "MOVA LINCO",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "X1 Pro",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "UP6",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "贾锌润",
+          "type": "person",
+          "role": "context"
+        },
+        {
+          "name": "CES 2026",
+          "type": "organization",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "AI硬件",
+          "confidence": 0.95
+        },
+        {
+          "name": "其他",
+          "originalName": "智能家居",
+          "confidence": 0.9
+        },
+        {
+          "name": "商业化",
+          "originalName": "融资",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "上线",
+          "上线",
+          "融资",
+          "融资",
+          "支持",
+          "支持",
+          "完善"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "MOVA LINCO",
+          "AI路由器市场",
+          "家庭AI生态"
+        ]
+      },
+      "rawContent": "威联机器人科技（深圳）有限公司（以下简称\"MOVA LINCO\"）近日完成数千万元天使融资。融资资金将主要用于AI算法底层技术研发、完善产品量产体系，以及全球化渠道布局和家庭AI生态的持续建设。MOVA LINCO核心团队来自头部网络通信与智能硬件企业，在路由器、NAS存储及AI算力设备等方面拥有深厚的技术积累与产品经验。公司产品矩阵以AI智能语音路由器、AI NAS及AI算力盒子三大品类为核心，构建\"连接+存储+算力\"三位一体的家庭AI基础设施架构。首款产品AI智能语音路由X1 Pro内置定制语音芯片与自研语音算法，支持自然模糊语音交互，无需固定唤醒词即可控制全屋设备。此前在CES 2026上展出AI NAS UP6家庭私有云产品。",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "36kr_b7e3a1f9c4d2058a",
+      "title": "光之跃迁完成近五千万元天使轮融资，聚焦消费级四足机器人",
+      "summary": "深圳光之跃迁科技有限公司近日完成近五千万元天使轮融资，由正轩领投，光点资本、力合资本、松禾资本、恒信未来等机构跟投。公司成立于2026年2月，聚焦消费级四足机器人市场，以\"全地形移动底盘\"切入户外场景，瞄准欧美家庭、户外运动爱好者及银发群体，希望让四足机器人从展示型产品转向具备实际生产力的消费级工具。创始人兼CEO乐林株为香港中文大学机器人博士，曾任大疆创新研发骨干。公司构建了感知、运动、意图、角色四层智能架构，计划于2027年CES发布产品并启动量产。",
+      "publishedAt": "2026-07-13T02:47:38.000Z",
+      "language": "zh",
+      "source": {
+        "name": "36氪",
+        "url": "https://36kr.com/p/3893473722514181?f=rss",
+        "type": "36kr",
+        "metadata": {
+          "author": "乔钰杰",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "光之跃迁",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "乐林株",
+          "type": "person",
+          "role": "subject"
+        },
+        {
+          "name": "正轩",
+          "type": "organization",
+          "role": "beneficiary"
+        },
+        {
+          "name": "大疆创新",
+          "type": "company",
+          "role": "context"
+        },
+        {
+          "name": "香港中文大学",
+          "type": "organization",
+          "role": "context"
+        },
+        {
+          "name": "石头科技",
+          "type": "company",
+          "role": "context"
+        },
+        {
+          "name": "四足机器人",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "强化学习",
+          "type": "technology",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "具身智能",
+          "originalName": "消费级机器人",
+          "confidence": 0.95
+        },
+        {
+          "name": "商业化",
+          "originalName": "融资",
+          "confidence": 0.9
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "创新",
+          "发布",
+          "融资",
+          "融资"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "光之跃迁",
+          "正轩",
+          "光点资本",
+          "力合资本",
+          "松禾资本",
+          "恒信未来"
+        ]
+      },
+      "rawContent": "深圳光之跃迁科技有限公司（Lumisition Robotics）近日完成近五千万元天使轮融资，由正轩领投，光点资本、力合资本、松禾资本、恒信未来等机构跟投。本轮资金将主要用于产品研发、算法迭代及量产准备。光之跃迁成立于2026年2月，聚焦消费级四足机器人市场，希望以\"全地形移动底盘\"切入户外场景，解决搬运、辅助行动等体力劳动需求。公司瞄准拥有独栋住宅的欧美家庭、户外运动爱好者以及银发群体，希望让四足机器人从展示型产品转向具备实际生产力的消费级工具。",
+      "rawContentType": "news",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0,
+      "heatScore": 30
+    },
+    {
+      "id": "36kr_4f7a2c9e1b3d5860",
+      "title": "对话Om AI赵天成：多年坚守，押注物理AI原生的「流式」未来",
+      "summary": "Om AI联汇发布全球首个面向物理AI的端侧流式多模态模型系列VLX，首次提出\"端侧原生流式多模态\"架构，从设计之初即针对端侧算力约束，打通\"持续感知+精准定位+行动决策\"的物理AI完整闭环。CEO兼首席科学家赵天成博士毕业于CMU语言技术所，自2019年创业以来坚守视觉+语言流式多模态路线，未追逐生成式AI热潮。VLX已在机器人、无人机、可穿戴设备、安防摄像头等物理终端落地，实现从被动执行到主动适应场景的跨越。2026年AI行业正从数字AI转向物理AI，多条技术路线并存，Om AI已率先完成从仿真实验到产业落地的商业闭环。",
+      "publishedAt": "2026-07-13T02:39:18.000Z",
+      "language": "zh",
+      "source": {
+        "name": "36氪",
+        "url": "https://36kr.com/p/3893445208717826?f=rss",
+        "type": "36kr",
+        "metadata": {
+          "author": "36氪",
+          "category": "AI"
+        }
+      },
+      "entities": [
+        {
+          "name": "Om AI联汇",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "VLX",
+          "type": "product",
+          "role": "subject"
+        },
+        {
+          "name": "赵天成",
+          "type": "person",
+          "role": "subject"
+        },
+        {
+          "name": "CMU语言技术所",
+          "type": "organization",
+          "role": "context"
+        },
+        {
+          "name": "流式多模态",
+          "type": "technology",
+          "role": "subject"
+        },
+        {
+          "name": "物理AI",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "VLA",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "JEPA",
+          "type": "technology",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "物理AI",
+          "confidence": 0.98
+        },
+        {
+          "name": "多模态",
+          "originalName": "多模态",
+          "confidence": 0.95
+        },
+        {
+          "name": "具身智能",
+          "originalName": "机器人",
+          "confidence": 0.7
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "发布",
+          "热潮",
+          "押注"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Om AI联汇",
+          "VLX",
+          "物理AI行业"
+        ]
+      },
+      "rawContent": "一个从未见过监控画面的多模态模型，却比在监控数据上练了多年的小模型\"老将\"更懂监控。这不是科幻电影，这是2023年Om AI联汇的一场\"无心插柳\"，也是CEO兼首席科学家赵天成博士更加坚信\"多模态训练方式能为物理开放世界带来泛化性\"的关键节点。彼时，AI行业正在追求以大语言模型为核心的生成式AI。三年后，这个多模态模型演变成了VLX——全球首个面向物理AI的端侧流式多模态模型系列。首次提出\"端侧原生流式多模态\"这一全新模型架构，而通过这个从Day 1为端侧算力约束设计的架构，VLX模型首次在端侧打通\"持续感知+精准定位+行动决策\"的物理AI完整闭环。",
+      "rawContentType": "article",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0.85,
+      "heatScore": 51
+    },
+    {
+      "id": "zhihu_a3f7c2d9e1b08f54",
+      "title": "有没有一种「落后」的生活方式，仔细想后竟让人有点羡慕？",
+      "summary": "知乎上一则关于\"落后生活方式\"的讨论引发热议，获得201万热度、68个回答。讨论中特别提到\"拒绝使用AI的人类\"圈子，将其描述为人类树洞——在这里，笨拙比流畅珍贵，错别字比通顺可爱。该话题反映了部分人对AI普及后生活方式的反思，以及在技术高度依赖的背景下对人类原始、不完美表达方式的怀念与向往，引发社区广泛共鸣与讨论。",
+      "publishedAt": "2026-07-07T12:09:51.000Z",
+      "language": "zh",
+      "source": {
+        "name": "知乎",
+        "url": "https://www.zhihu.com/question/2057919283821278700",
+        "type": "zhihu",
+        "metadata": {
+          "heat": "201 万热度",
+          "answerCount": 68
+        }
+      },
+      "entities": [
+        {
+          "name": "AI",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "拒绝使用AI的人类",
+          "type": "organization",
+          "role": "subject"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "AI与人类生活方式",
+          "confidence": 0.95
+        },
+        {
+          "name": "其他",
+          "originalName": "数字生活反思",
+          "confidence": 0.85
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "普及"
+        ],
+        "negHits": []
+      },
+      "rawContent": "加入圈子，瓜分80000盐粒这里是「拒绝使用 AI 的人类」临时集合地，也是人类树洞——在这里，笨拙比流畅珍贵，错别字比通顺可爱。拒绝AI的我们",
+      "rawContentType": "discussion",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": 0.15
+      },
+      "_significance": 0,
+      "heatScore": 100
+    },
+    {
+      "id": "zhihu_a3f7b2c9e8d14f6a",
+      "title": "FIFA主席正式确认世界杯将考虑扩至64支球队",
+      "summary": "FIFA主席正式确认世界杯将考虑扩军至64支球队，并表示\"每个国家都应该有机会参加世界杯\"。该消息在知乎平台引发广泛热议，讨论热度达110万，已有76条回答。扩军提议意味着参赛名额将从目前的48队进一步增加，更多国家有望参与这一全球最大足球赛事。此举可能降低参赛门槛，但同时也引发关于赛事整体质量、赛程冗长以及商业利益驱动等方面的争议与讨论。",
+      "publishedAt": "2026-07-12T21:39:53.000Z",
+      "language": "zh",
+      "source": {
+        "name": "知乎",
+        "url": "https://www.zhihu.com/question/2059874675564591000",
+        "type": "zhihu",
+        "metadata": {
+          "heat": "110 万热度",
+          "answerCount": 76
+        }
+      },
+      "entities": [
+        {
+          "name": "FIFA",
+          "type": "organization",
+          "role": "subject"
+        },
+        {
+          "name": "世界杯",
+          "type": "product",
+          "role": "object"
+        }
+      ],
+      "topics": [
+        {
+          "name": "其他",
+          "originalName": "体育赛事",
+          "confidence": 0.95
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [
+          "驱动"
+        ],
+        "negHits": [
+          "争议"
+        ]
+      },
+      "rawContent": "FIFA主席正式确认世界杯将考虑扩至64支球队：每个国家都应该有机会参加世界杯。知乎讨论热度110万，76条回答。",
+      "rawContentType": "discussion",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": 0.1
+      },
+      "_significance": 0,
+      "heatScore": 100
+    },
+    {
+      "id": "zhihu_8f3a2b1c9d7e5f4a",
+      "title": "马斯克再出狂言，称其目标是让 SpaceX 价值超过整个地球",
+      "summary": "SpaceX CEO 埃隆·马斯克在一条推文中宣称，如果 SpaceX 实现目标，其价值将超过地球上其余一切的总和。该言论是马斯克为回应一名支持者对 SpaceX 与 Anthropic 签署 AI 算力协议的质疑而发表，支持者认为 SpaceX 将过多资金交给了一家竞争对手。马斯克长期以来一直通过描绘科幻式未来为自己的商业计划争取投资资金。此话题在知乎引发热议，获得约 100 万热度及 36 条回答。",
+      "publishedAt": "2026-07-11T06:18:06.000Z",
+      "language": "zh",
+      "source": {
+        "name": "知乎",
+        "url": "https://www.zhihu.com/question/2059280313839366400",
+        "type": "zhihu",
+        "metadata": {
+          "heat": "100 万热度",
+          "answerCount": 36
+        }
+      },
+      "entities": [
+        {
+          "name": "SpaceX",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "埃隆·马斯克",
+          "type": "person",
+          "role": "subject"
+        },
+        {
+          "name": "Anthropic",
+          "type": "company",
+          "role": "object"
+        }
+      ],
+      "topics": [
+        {
+          "name": "其他",
+          "originalName": "商业航天",
+          "confidence": 0.95
+        },
+        {
+          "name": "LLM",
+          "originalName": "AI算力",
+          "confidence": 0.8
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 0.333,
+        "method": "lexicon",
+        "posHits": [
+          "支持",
+          "支持"
+        ],
+        "negHits": [
+          "质疑"
+        ]
+      },
+      "rawContent": "IT之家7 月 11 日消息，SpaceX CEO 埃隆·马斯克多年来一直靠向投资者描绘科幻式未来，为自己的商业计划争取资金。马斯克 10 日更是在一条推文中口出狂言：\"如果我们实现目标，SpaceX 的价值将超过地球上其余一切的总和。\" 马斯克发表上述言论，是为了回应一名支持者对SpaceX 与 Anthropic 最新 AI 算力协议的质疑。对方认为，SpaceX 把太多资金交给了一家竞争对手。",
+      "rawContentType": "discussion",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": -0.1
+      },
+      "_significance": 0,
+      "heatScore": 100
+    },
+    {
+      "id": "devto_5gee_a1b2c3d4",
+      "title": "Simple Benchmark Review: Ollama on Jetson Nano",
+      "summary": "本文是系列文章的第二部分,作者在前期探索的基础上,对 Ollama 大语言模型运行框架在 NVIDIA Jetson Nano 边缘计算板上的性能进行了基准测试评测。文章延续了此前的研究路径,记录了在 Jetson Nano 这一低功耗嵌入式平台上运行本地 LLM 的实际表现,涵盖了模型加载速度、推理吞吐量等关键指标。该测试旨在评估边缘设备上本地部署大语言模型的可行性,为在资源受限环境中使用 Ollama 提供参考数据。",
+      "publishedAt": "2026-07-12T05:43:01Z",
+      "language": "en",
+      "source": {
+        "name": "Dev.to",
+        "url": "https://dev.to/annavi11arrea1/simple-benchmark-review-ollama-on-jetson-nano-5gee",
+        "type": "devto",
+        "metadata": {
+          "reactionsCount": 13,
+          "tags": [
+            "ai",
+            "webdev",
+            "nvidia",
+            "productivity"
+          ],
+          "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fa2vq7v2wcc6jon4u5xgq.png"
+        }
+      },
+      "entities": [
+        {
+          "name": "Ollama",
+          "type": "framework",
+          "role": "subject"
+        },
+        {
+          "name": "Jetson Nano",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "NVIDIA",
+          "type": "company",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "LLM",
+          "confidence": 0.95
+        },
+        {
+          "name": "其他",
+          "originalName": "边缘计算",
+          "confidence": 0.9
+        },
+        {
+          "name": "评测基准",
+          "originalName": "benchmark",
+          "confidence": 0.85
+        },
+        {
+          "name": "本地推理",
+          "originalName": "本地部署",
+          "confidence": 0.8
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "research",
+        "timeHorizon": "short-term",
+        "affectedEntities": [
+          "Ollama",
+          "Jetson Nano"
+        ]
+      },
+      "rawContentType": "article",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": 0.1
+      },
+      "_significance": 0,
+      "heatScore": 26
+    },
+    {
+      "id": "devto_d3f7a1c2b9e8",
+      "title": "I Built a Monitor for Servers. Then Pointed It at Myself.",
+      "summary": "这是一篇 Dev.to 周末挑战赛（Passion Edition）的参赛文章。作者 Dannwaneri 构建了一个服务器监控工具，随后将监控对象转向自身——即用该工具来监控自己的行为或状态。项目涉及 AI 相关技术，带有 devchallenge、weekendchallenge 和 ai 标签。文章获得了 14 个反应，展示了开发者在周末挑战中将基础设施监控理念创意性地应用于个人场景的实践。",
+      "publishedAt": "2026-07-13T01:22:10.000Z",
+      "language": "en",
+      "source": {
+        "name": "Dev.to",
+        "url": "https://dev.to/dannwaneri/i-built-a-monitor-for-servers-then-pointed-it-at-myself-g5",
+        "type": "devto",
+        "metadata": {
+          "reactionsCount": 14,
+          "tags": [
+            "devchallenge",
+            "weekendchallenge",
+            "ai"
+          ],
+          "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F0kjvybwxfnlc7tlljgo5.jpg"
+        }
+      },
+      "entities": [
+        {
+          "name": "Server Monitor",
+          "type": "product",
+          "role": "subject"
+        },
+        {
+          "name": "AI",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "Dev.to",
+          "type": "product",
+          "role": "context"
+        },
+        {
+          "name": "Weekend Challenge: Passion Edition",
+          "type": "product",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "AI",
+          "confidence": 0.8
+        },
+        {
+          "name": "其他",
+          "originalName": "开发者挑战赛",
+          "confidence": 0.95
+        },
+        {
+          "name": "编程能力",
+          "originalName": "开发者工具",
+          "confidence": 0.7
+        }
+      ],
+      "sentiment": {
+        "direction": "neutral",
+        "score": 0,
+        "method": "lexicon",
+        "posHits": [],
+        "negHits": []
+      },
+      "rawContent": "This is a submission for Weekend Challenge: Passion Edition. What I Built: I'm in Port...",
+      "rawContentType": "article",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 28
+    },
+    {
+      "id": "devto_a3f8c1d2e9b07654",
+      "title": "Commit Chronicles—Your Obsession Leaves a Trail. Mine Gives It a Plot.",
+      "summary": "Commit Chronicles 是一个开发者周末挑战项目，利用 Snowflake 平台获取 Git 仓库的提交历史，通过纯 SQL 从中挖掘出一条连贯的故事线，再借助 Snowflake Cortex AI 服务将该线索进行叙事化呈现。整个项目将六条故事线浓缩为一张卡片展示，把枯燥的代码提交记录转化为可读的叙事内容。项目标签涵盖 devchallenge、snowflake 和 AI，体现了数据仓库与生成式 AI 结合进行数据叙事的创新探索。",
+      "publishedAt": "2026-07-12T18:46:37.000Z",
+      "language": "en",
+      "source": {
+        "name": "Dev.to",
+        "url": "https://dev.to/anchildress1/commit-chronicles-your-obsession-leaves-a-trail-mine-gives-it-a-plot-h8j",
+        "type": "devto",
+        "metadata": {
+          "reactionsCount": 9,
+          "tags": [
+            "devchallenge",
+            "weekendchallenge",
+            "snowflake",
+            "ai"
+          ],
+          "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fcfu2d4wuogdxvxofu8tz.png"
+        }
+      },
+      "entities": [
+        {
+          "name": "Commit Chronicles",
+          "type": "product",
+          "role": "subject"
+        },
+        {
+          "name": "Snowflake",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "Cortex",
+          "type": "product",
+          "role": "object"
+        },
+        {
+          "name": "SQL",
+          "type": "technology",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "其他",
+          "originalName": "数据叙事",
+          "confidence": 0.95
+        },
+        {
+          "name": "LLM",
+          "originalName": "AI",
+          "confidence": 0.9
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "创新"
+        ],
+        "negHits": []
+      },
+      "rawContent": "Snowflake fetches a repo's commit history, finds the one story in it with plain SQL, and narrates that single thread with Cortex. Six storylines. One card.",
+      "rawContentType": "article",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 18
+    },
+    {
+      "id": "github_8a3f2c1e7b9d4a6f",
+      "title": "LangChain: 构建基于 LLM 的上下文感知推理应用的生产级框架",
+      "summary": "LangChain 是一个用于构建基于大语言模型(LLM)上下文感知推理应用的生产级开源框架。该框架支持构建智能代理(Agent)、检索增强生成(RAG)以及复杂的 LLM 应用,使用 Python 语言编写。目前在 GitHub 上拥有 95,000 个 Star 和 15,500 个 Fork,是 LLM 应用开发领域最受欢迎的开源框架之一,广泛应用于企业级 AI 应用的快速开发与部署。",
+      "publishedAt": "2026-07-10T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "type": "github",
+        "metadata": {
+          "stars": 95000,
+          "forks": 15500,
+          "repoLanguage": "Python"
+        }
+      },
+      "entities": [
+        {
+          "name": "langchain",
+          "type": "framework",
+          "role": "subject"
+        },
+        {
+          "name": "langchain-ai/langchain",
+          "type": "repository",
+          "role": "subject"
+        },
+        {
+          "name": "Python",
+          "type": "language",
+          "role": "context"
+        },
+        {
+          "name": "RAG",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "LLM",
+          "type": "technology",
+          "role": "context"
+        },
+        {
+          "name": "Agent",
+          "type": "technology",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "LLM",
+          "confidence": 0.95
+        },
+        {
+          "name": "Agent",
+          "originalName": "Agent",
+          "confidence": 0.9
+        },
+        {
+          "name": "记忆机制",
+          "originalName": "RAG",
+          "confidence": 0.85
+        },
+        {
+          "name": "开源框架",
+          "originalName": "开源框架",
+          "confidence": 0.9
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "支持"
+        ],
+        "negHits": []
+      },
+      "rawContent": "langchain-ai/langchain\\nBuild context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.\\nStars: 95000 Forks: 15500 Language: Python",
+      "rawContentType": "readme",
+      "originalSentiment": {
+        "direction": "neutral",
+        "score": 0.1
+      },
+      "_significance": 0,
+      "heatScore": 100
+    },
+    {
+      "id": "github_crewAIInc_crewAI_3a7f9c2b",
+      "title": "crewAI: 多智能体协作编排开源框架",
+      "summary": "crewAI 是一个开源的多智能体协作框架，由 crewAIInc 开发并托管在 GitHub 上。该框架支持编排角色扮演式的自主 AI 智能体，允许多个智能体通过可自定义的角色和任务进行协作。项目使用 Python 编写，目前已获得 28000 个 Star 和 3900 个 Fork，显示出社区对多智能体协作方向的广泛关注与活跃参与。",
+      "publishedAt": "2026-07-09T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "crewAIInc/crewAI",
+        "url": "https://github.com/crewAIInc/crewAI",
+        "type": "github",
+        "metadata": {
+          "stars": 28000,
+          "forks": 3900,
+          "repoLanguage": "Python"
+        }
+      },
+      "entities": [
+        {
+          "name": "crewAI",
+          "type": "repository",
+          "role": "subject"
+        },
+        {
+          "name": "crewAIInc",
+          "type": "organization",
+          "role": "subject"
+        },
+        {
+          "name": "Python",
+          "type": "language",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "Agent",
+          "originalName": "Agent",
+          "confidence": 0.95
+        },
+        {
+          "name": "开源框架",
+          "originalName": "开源框架",
+          "confidence": 0.9
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "支持"
+        ],
+        "negHits": []
+      },
+      "rawContent": "crewAIInc/crewAI\nFramework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.\nStars: 28000 Forks: 3900 Language: Python",
+      "rawContentType": "readme",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 89
+    },
+    {
+      "id": "github_8f3a2b1c9d7e6f5a",
+      "title": "ggerganov/llama.cpp: LLM inference in C/C++ with minimal dependencies",
+      "summary": "ggerganov/llama.cpp 是一个用 C/C++ 编写的大语言模型推理框架，以极少的依赖项著称。该项目支持在 CPU 和 GPU 上本地运行大型语言模型，无需复杂的环境配置。目前该项目在 GitHub 上已获得 68000 个星标和 9700 个分支，主要编程语言为 C++。该框架因其轻量级、跨平台、易于部署的特点，成为开发者和研究者在本地运行大模型的热门选择之一。",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "ggerganov/llama.cpp",
+        "url": "https://github.com/ggerganov/llama.cpp",
+        "type": "github",
+        "metadata": {
+          "stars": 68000,
+          "forks": 9700,
+          "repoLanguage": "C++"
+        }
+      },
+      "entities": [
+        {
+          "name": "ggerganov/llama.cpp",
+          "type": "repository",
+          "role": "subject"
+        },
+        {
+          "name": "C++",
+          "type": "language",
+          "role": "context"
+        },
+        {
+          "name": "LLM",
+          "type": "technology",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "LLM",
+          "confidence": 1
+        },
+        {
+          "name": "开源模型",
+          "originalName": "开源模型",
+          "confidence": 0.9
+        },
+        {
+          "name": "本地推理",
+          "originalName": "本地推理",
+          "confidence": 0.95
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "支持"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "long-term",
+        "affectedEntities": [
+          "ggerganov/llama.cpp",
+          "LLM"
+        ]
+      },
+      "rawContent": "ggerganov/llama.cpp\\nLLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.\\nStars: 68000 Forks: 9700 Language: C++",
+      "rawContentType": "readme",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0,
+      "heatScore": 97
+    },
+    {
+      "id": "github_a1b3c5d7e9f01234",
+      "title": "microsoft/autogen: Enable Next-Gen LLM Applications via Multi-Agent Conversation Framework",
+      "summary": "微软开源的 AutoGen 是一个多智能体对话框架，旨在通过多个智能体之间的协作对话来构建下一代大语言模型应用。该框架支持开发者创建能够自主协作完成复杂任务的 AI 智能体群，目前在 GitHub 上已获得超过 35000 个 Star 和 5100 个 Fork，使用 Python 语言开发，是构建 LLM 多智能体应用的重要开源项目之一。",
+      "publishedAt": "2026-07-11T00:00:00.000Z",
+      "language": "en",
+      "source": {
+        "name": "microsoft/autogen",
+        "url": "https://github.com/microsoft/autogen",
+        "type": "github",
+        "metadata": {
+          "stars": 35000,
+          "forks": 5100,
+          "repoLanguage": "Python"
+        }
+      },
+      "entities": [
+        {
+          "name": "microsoft/autogen",
+          "type": "repository",
+          "role": "subject"
+        },
+        {
+          "name": "Microsoft",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "Multi-Agent Conversation Framework",
+          "type": "framework",
+          "role": "context"
+        },
+        {
+          "name": "Python",
+          "type": "language",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "Agent",
+          "originalName": "Multi-Agent",
+          "confidence": 0.98
+        },
+        {
+          "name": "LLM",
+          "originalName": "LLM",
+          "confidence": 0.95
+        },
+        {
+          "name": "开源框架",
+          "originalName": "开源框架",
+          "confidence": 0.9
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "支持"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "long-term",
+        "affectedEntities": [
+          "microsoft/autogen",
+          "Microsoft"
+        ]
+      },
+      "rawContent": "microsoft/autogen\nEnable Next-Gen Large Language Model Applications via multi-agent conversation framework.\nStars: 35000 Forks: 5100 Language: Python",
+      "rawContentType": "readme",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0,
+      "heatScore": 91
+    },
+    {
+      "id": "github_7f3a9c2e1b8d4a6f",
+      "title": "All-Hands-AI/OpenHands: 开源自主编程代理",
+      "summary": "OpenHands 是由 All-Hands-AI 组织开发的开源自主编程代理（autonomous coding agent），基于 Python 构建。该工具能够自主编写代码、执行命令、浏览网页等，提供全面的自动化编程能力。项目在 GitHub 上已获得 42,000 颗星和 4,600 次分支，显示出社区对其高度关注与认可。作为一个开源 AI 编程代理，OpenHands 旨在降低开发门槛、提升编码效率，是当前开源 AI Agent 领域的热门项目之一。",
+      "publishedAt": "2026-07-07T00:00:00Z",
+      "language": "en",
+      "source": {
+        "name": "GitHub",
+        "url": "https://github.com/All-Hands-AI/OpenHands",
+        "type": "github",
+        "metadata": {
+          "stars": 42000,
+          "forks": 4600,
+          "repoLanguage": "Python"
+        }
+      },
+      "entities": [
+        {
+          "name": "OpenHands",
+          "type": "repository",
+          "role": "subject"
+        },
+        {
+          "name": "All-Hands-AI",
+          "type": "organization",
+          "role": "subject"
+        },
+        {
+          "name": "Python",
+          "type": "language",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "Agent",
+          "originalName": "AI Agent",
+          "confidence": 0.95
+        },
+        {
+          "name": "开源模型",
+          "originalName": "开源模型",
+          "confidence": 0.9
+        },
+        {
+          "name": "编程能力",
+          "originalName": "自动化编程",
+          "confidence": 0.95
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "提升",
+          "认可"
+        ],
+        "negHits": []
+      },
+      "impact": {
+        "scope": "industry",
+        "timeHorizon": "long-term",
+        "affectedEntities": [
+          "OpenHands",
+          "All-Hands-AI"
+        ]
+      },
+      "rawContent": "All-Hands-AI/OpenHands\\nOpen-source autonomous coding agent. Write code, run commands, browse the web, and more.\\nStars: 42000 Forks: 4600 Language: Python",
+      "rawContentType": "readme",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.7
+      },
+      "_significance": 0,
+      "heatScore": 92
+    },
+    {
+      "id": "github_a1b3c5d7e9f0a2b4",
+      "title": "huggingface/transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX",
+      "summary": "huggingface/transformers 是 Hugging Face 维护的开源机器学习库，支持 PyTorch、TensorFlow 和 JAX 三大深度学习框架，提供数以千计的预训练模型，覆盖自然语言处理、计算机视觉和音频领域。该项目以 Python 编写，在 GitHub 上获得 132,000 星标和 26,000 分叉，是当前最受欢迎的 AI 开源项目之一，为研究者和开发者提供了便捷的模型加载与微调接口。",
+      "publishedAt": "2026-07-06T00:00:00Z",
+      "language": "en",
+      "source": {
+        "name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "type": "github",
+        "metadata": {
+          "stars": 132000,
+          "forks": 26000,
+          "repoLanguage": "Python"
+        }
+      },
+      "entities": [
+        {
+          "name": "huggingface/transformers",
+          "type": "repository",
+          "role": "subject"
+        },
+        {
+          "name": "Hugging Face",
+          "type": "company",
+          "role": "subject"
+        },
+        {
+          "name": "PyTorch",
+          "type": "framework",
+          "role": "context"
+        },
+        {
+          "name": "TensorFlow",
+          "type": "framework",
+          "role": "context"
+        },
+        {
+          "name": "JAX",
+          "type": "framework",
+          "role": "context"
+        },
+        {
+          "name": "Python",
+          "type": "language",
+          "role": "context"
+        }
+      ],
+      "topics": [
+        {
+          "name": "LLM",
+          "originalName": "Machine Learning",
+          "confidence": 1
+        },
+        {
+          "name": "训练方法",
+          "originalName": "NLP",
+          "confidence": 0.95
+        },
+        {
+          "name": "开源模型",
+          "originalName": "开源模型",
+          "confidence": 0.9
+        },
+        {
+          "name": "多模态",
+          "originalName": "Computer Vision",
+          "confidence": 0.7
+        }
+      ],
+      "sentiment": {
+        "direction": "positive",
+        "score": 1,
+        "method": "lexicon",
+        "posHits": [
+          "支持"
+        ],
+        "negHits": []
+      },
+      "rawContent": "huggingface/transformers\\nState-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.\\nStars: 132000 Forks: 26000 Language: Python",
+      "rawContentType": "readme",
+      "originalSentiment": {
+        "direction": "positive",
+        "score": 0.6
+      },
+      "_significance": 0,
+      "heatScore": 100
+    }
+  ]
+}

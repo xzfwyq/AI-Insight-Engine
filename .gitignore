@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+web/node_modules/
+
+# Build output
+dist/
+web/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data(原始抓取缓存不提交,但静态数据和 processed 结果提交)
+data/raw/*.cache.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+# Misc
+.cache/
+coverage/
+INTERVIEW_PREP.md
+PLAN.md

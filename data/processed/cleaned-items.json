@@ -1,0 +1,450 @@
+[
+  {
+    "id": "c7e5fcfb52d3df59",
+    "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
+    "summary": "Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second,",
+    "url": "https://huggingface.co/papers/2607.06374",
+    "publishedAt": "2026-07-07T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "rawContent": "Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second, when the available evidence is incomplete, noisy, or ambiguous, VLMs often produce confident but unsupported answers instead of calibrated uncertainty. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery. VaseMuseum combines an interactive virtual museum with VaseAgent, which supports both 2D images and 3D artifacts through multimodal perception, 3D-aware reasoning, external knowledge retrieval, and inference-time reliability control. Specifically, VaseAgent retrieves evidence from authoritative web and museum knowledge sources, and source-level control selects diverse and verifiable evidence before generation. Meanwhile, response-level control checks generated claims against the evidence pool and encourages neutral, evidence-bounded answers when support is insufficient or conflicting. Moreover, a training-free GRPO-style selection mechanism favors responses with valid references and calibrated confidence without updating the VLM backbone. Experiments in a realistic digital museum simulation show that VaseMuseum improves citation validity, reduces hallucinations on knowledge-intensive queries, and produces more neutral answers under ambiguity compared with search-enabled VLM baselines.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Jiazi Wang",
+        "Nonghai Zhang",
+        "Qiushi Xie",
+        "Zeyu Zhang",
+        "Yufeng Chen"
+      ],
+      "paperId": "2607.06374"
+    }
+  },
+  {
+    "id": "a7c04911c6c59ae6",
+    "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
+    "summary": "Post-training quantization (PTQ) is a widely adopted technique for compressing large language models (LLMs) without retraining. Existing second-order PTQ methods, including GPTQ, construct quantization objectives exclusively from input activation statistics, effectively assuming that all output channels contribute equally to the layer-wise reconstruction objective. We propose KronQ, a PTQ framework that challenges this assumption by introducing the gradient covariance into the quantization pipel",
+    "url": "https://huggingface.co/papers/2607.07964",
+    "publishedAt": "2026-07-08T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "rawContent": "Post-training quantization (PTQ) is a widely adopted technique for compressing large language models (LLMs) without retraining. Existing second-order PTQ methods, including GPTQ, construct quantization objectives exclusively from input activation statistics, effectively assuming that all output channels contribute equally to the layer-wise reconstruction objective. We propose KronQ, a PTQ framework that challenges this assumption by introducing the gradient covariance into the quantization pipeline. Under the Kronecker-factored Hessian approximation, the quantization loss depends jointly on both the activation and gradient covariances, and KronQ exploits this at two complementary levels. (1) KronQ introduces bidirectional incoherence processing, extending the existing input-side random rotation to the output dimension using the gradient covariance, reducing weight magnitude variance across both input and output dimensions. (2) KronQ derives a new sensitivity metric for inter-layer mixed-precision allocation, driven by the gradient and activation Hessian traces. Notably, in the case of 2-bit weight-only quantization on LLaMA-3-70B, while GPTQ and GPTAQ diverge or produce degenerate quantizations (>2000 perplexity on WikiText-2), KronQ achieves 7.93 perplexity.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Donghyun Lee",
+        "Yuhang Li",
+        "Ruokai Yin",
+        "Priyadarshini Panda"
+      ],
+      "paperId": "2607.07964"
+    }
+  },
+  {
+    "id": "6c99ea8b9a117c0e",
+    "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+    "summary": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including e",
+    "url": "https://huggingface.co/papers/2607.08964",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "rawContent": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Zongxia Li",
+        "Zhongzhi Li",
+        "Yucheng Shi",
+        "Ruhan Wang",
+        "Junyao Yang"
+      ],
+      "paperId": "2607.08964"
+    }
+  },
+  {
+    "id": "dc71d040db0b4daf",
+    "title": "Phone Segmentation and Recognition through Phonological Activation Mapping",
+    "summary": "Phone segmentation and recognition are inherently related tasks, yet modern approaches typically model them separately. We argue that phonetic structure is already latent in the representations of self-supervised speech models (S3Ms), and one only needs to steer them to solve both tasks. We leverage S3M-based Phonological Activation Mapping (SPAM), which maps each S3M representation frame to a vector of phonological feature activations, such as voicing and nasality. On top of SPAM, we introduce",
+    "url": "https://huggingface.co/papers/2607.09020",
+    "publishedAt": "2026-07-10T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "rawContent": "Phone segmentation and recognition are inherently related tasks, yet modern approaches typically model them separately. We argue that phonetic structure is already latent in the representations of self-supervised speech models (S3Ms), and one only needs to steer them to solve both tasks. We leverage S3M-based Phonological Activation Mapping (SPAM), which maps each S3M representation frame to a vector of phonological feature activations, such as voicing and nasality. On top of SPAM, we introduce two simple but effective lightweight, gradient-descent-free prediction heads: a recognition head and a segmentation head. Our method requires less than a minute of phonetic transcriptions, and generalizes to unseen phones during training. Across a diverse range of datasets, our approach attains strong segmentation and recognition performance.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Shikhar Bharadwaj",
+        "Kwanghee Choi",
+        "Stephen McIntosh",
+        "Chin-Jou Li",
+        "Eunjung Yeo"
+      ],
+      "paperId": "2607.09020"
+    }
+  },
+  {
+    "id": "01af2a9504e16f3d",
+    "title": "From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models",
+    "summary": "Large-scale text-to-image models are attractive backbones for dense prediction because RGB generation pretraining learns rich semantic, structural, and geometric priors. Existing generative and editing approaches reuse these priors by casting dense prediction as target generation: annotations such as depth, normals, alpha mattes, masks, and heatmaps are encoded into an RGB-trained VAE latent space and decoded back as image-like targets. We argue this inherits more of the generative output interf",
+    "url": "https://huggingface.co/papers/2607.06553",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "hf_papers",
+    "sourceType": "hf_papers",
+    "rawContent": "Large-scale text-to-image models are attractive backbones for dense prediction because RGB generation pretraining learns rich semantic, structural, and geometric priors. Existing generative and editing approaches reuse these priors by casting dense prediction as target generation: annotations such as depth, normals, alpha mattes, masks, and heatmaps are encoded into an RGB-trained VAE latent space and decoded back as image-like targets. We argue this inherits more of the generative output interface than dense prediction requires: unlike RGB synthesis, dense prediction asks for pixel-correct, task-native fields on the same image plane, not new RGB content to be rendered. Our key observation is that a pretrained DiT already organizes RGB inputs through a patch-to-token-to-patch lattice on the image plane, so each token indexes a fixed output patch whose channels can carry task-native quantities instead of RGB appearance. We instantiate this as ReChannel: we keep the VAE encoder for the DiT's input distribution but drop the target-side decoder, adapt the frozen DiT with task LoRA, and map each token to its p x p x K_t pixel-space patch through a shared token-local linear head--about 33K parameters, no spatial mixing. Using FLUX-Klein, we evaluate on six dense prediction tasks and over a dozen benchmarks. This minimal interface sets new state-of-the-art on trimap-free matting, KITTI depth, and referring segmentation, and stays competitive on normals, saliency, and pose. In a matched 4B setting it is more accurate and 2.48x faster than an edit-plus-latent-decode counterpart--dense perception can benefit from generative pretraining without inheriting its output interface.",
+    "rawContentType": "abstract",
+    "metadata": {
+      "authors": [
+        "Zanyi Wang",
+        "Xin Lin",
+        "Haodong Li",
+        "Dengyang Jiang",
+        "Yijiang Li"
+      ],
+      "paperId": "2607.06553"
+    }
+  },
+  {
+    "id": "4a932ba0a72e27bd",
+    "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+    "summary": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+    "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+    "publishedAt": "2026-07-11T14:13:00.000Z",
+    "language": "en",
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "rawContent": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting. ",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Jagmeet Singh",
+      "category": "AI"
+    }
+  },
+  {
+    "id": "08da3c45ef54014d",
+    "title": "Meta removes controversial AI feature on Instagram after backlash",
+    "summary": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+    "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+    "publishedAt": "2026-07-10T23:55:07.000Z",
+    "language": "en",
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "rawContent": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Lucas Ropek",
+      "category": "AI"
+    }
+  },
+  {
+    "id": "48ecc025b3c77c5c",
+    "title": "Apple sues OpenAI over alleged trade secret theft",
+    "summary": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+    "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+    "publishedAt": "2026-07-10T21:00:29.000Z",
+    "language": "en",
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "rawContent": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Sarah Perez",
+      "category": "AI"
+    }
+  },
+  {
+    "id": "0495e5ac8304ba39",
+    "title": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
+    "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
+    "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+    "publishedAt": "2026-07-10T19:00:00.000Z",
+    "language": "en",
+    "sourceId": "techcrunch",
+    "sourceType": "techcrunch",
+    "rawContent": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start [&#8230;]",
+    "rawContentType": "article",
+    "metadata": {
+      "author": "Rebecca Bellan, Theresa Loconsolo",
+      "category": "AI"
+    }
+  },
+  {
+    "id": "2f9b0e0c320f30c6",
+    "title": "lululemon「割不动」中国人了",
+    "summary": "作者 | 谢芸子\n编辑 | 张帆\n在中国市场，lululemon开始被人们拿着放大镜审视。\n6月中旬，lululemon在上海北外滩举办了一场大型户外瑜伽活动，中途遭遇暴雨。lululemon并未取消活动，而是让上千人在湿滑的瑜伽垫上完成了全套动作。\n现场画面被社交网络疯传。整齐划一的雨中静坐，被人们诟病为“矫揉造作”“品牌不为用户着想”，甚至被部分网友拿来与《周处除三害》中的邪教作对比。\n这一比喻的杀伤力是巨大的，lululemon最核心的商业密码恰恰是“类宗教”式的社群营销。\n公共叙事中，lululemon把自己的店员称为Educator教育家。\n创始人Chip Wilson在自传中解释过原因。他希望门店员工不是推销员，而是向顾客传递面料科技、哲学设计和健康生活方式的教育者。他认为，顾客理解了产品背后的技术与理念，会自发购买，无需硬性推销。\n店员成为教育家，线下活动自然能比喻为布道会，消费行为也可以包装成身份的皈依。但当一场大雨把一切浇成闹剧，消费者对品牌的信念便有了裂痕。更致命的是，这并非孤例。\nlululemon的“长城大鼓”事件仍在发酵；大洋彼岸，“面料门”反复上演。品牌势能",
+    "url": "https://36kr.com/p/3893430641703429?f=rss",
+    "publishedAt": "2026-07-13T03:07:43.000Z",
+    "language": "zh",
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "rawContent": "\n \n \n  作者 |&nbsp;谢芸子\n  编辑 | 张帆\n  在中国市场，lululemon开始被人们拿着放大镜审视。\n  6月中旬，lululemon在上海北外滩举办了一场大型户外瑜伽活动，中途遭遇暴雨。lululemon并未取消活动，而是让上千人在湿滑的瑜伽垫上完成了全套动作。\n  现场画面被社交网络疯传。整齐划一的雨中静坐，被人们诟病为“矫揉造作”“品牌不为用户着想”，甚至被部分网友拿来与《周处除三害》中的邪教作对比。\n  这一比喻的杀伤力是巨大的，lululemon最核心的商业密码恰恰是“类宗教”式的社群营销。\n  公共叙事中，lululemon把自己的店员称为Educator教育家。\n  创始人Chip Wilson在自传中解释过原因。他希望门店员工不是推销员，而是向顾客传递面料科技、哲学设计和健康生活方式的教育者。他认为，顾客理解了产品背后的技术与理念，会自发购买，无需硬性推销。\n  店员成为教育家，线下活动自然能比喻为布道会，消费行为也可以包装成身份的皈依。但当一场大雨把一切浇成闹剧，消费者对品牌的信念便有了裂痕。更致命的是，这并非孤例。\n  lululemon的“长城大鼓”事件仍在发酵；大洋彼岸，“面料门”反复上演。品牌势能的崩塌快速传导至资本市场。\n  2026年以来，lululemon的股价跌超43%，较2023年末的最高点暴跌77%。\n  信仰在退潮，当商业回归常识，这家曾经无往不利的“中产收割机”，正在被自己一手培育的消费者反噬。\n  \n  图片截自微博、小红书APP\n  \n  lululemon股价走势，图片来自Wind\n  创始人“进退失据”\n  要理解lululemon当下的困境，必须回到它的起点。\n  1998年，42岁的Wilson因背部不适报了瑜伽班。一个月内，班里的学员从6人涨到30人。\n  但他注意到一个尴尬的事实：所有女性，都穿着容易走光的舞蹈服。\n  Wilson嗅到了商机。他凭借此前创业失败、清偿债务所剩的80万美元，在温哥华创办了lululemon。公司创立后，Wilson做的第一件事，就是用技术定义产品。\n  他先是斥8万美元“巨资”，购置了两台日本平锁式缝纫机；为减少摩擦，将接缝置于外侧，又在裆部采用无缝设计与菱形内衬，从根本上化解了紧身裤的视觉尴尬。\n  不久后，lululemon的第一款产品“小黑弹力裤”问世，定价98至100美元，几乎是当时市场同类产品的三倍。\n  支撑这一高价的，正是Wilson从一开始就精准锚定的用户群体，他称之为“Super Girls”——受过良好教育、经济独立、追求健康与高品质生活的女性。\n  这已不再是简单的用户画像，而是一种身份认同。Wilson直言：“lululemon的产品不是为喝碳酸饮料的人准备的。”\n  那么，又该如何打动这部分人群？\n  由于没有足够的广告预算，Wilson剑走偏锋，将门店开在高端地段，白天卖衣服，晚上办瑜伽课，产品与社群深度绑定。\n  这种基于社群的模式很快奏效。瑜伽本身具有聚集性，凭借教练与学员之间的信任、品牌的高端定位，以及无可挑剔的“裸感”面料，仅成立一年，lululemon的产品就像传教一样在目标人群中散开。\n  2003年，Wilson引入安宏、高原两家私募资本，以2亿美元出让了48%的股份。2007年，lululemon成功在纳斯达克上市。但后期的故事算不上一帆风顺，创始人与董事会摩擦不断。\n  2013年，一场真正动摇品牌根基的“透视门”爆发，并迅速演变为全面性的企业危机。\n  事件源于一批当年3月上架的黑色Luon瑜伽裤。有消费者发现，这款高端瑜伽裤在练习“下犬式”等动作时，面料会变得过于透明。lululemon迅速召回相关批次产品，导致当季销售额损失高达2000万美元。\n  更大的灾难来自数月后的一档电视访谈。Wilson面对镜头，将质量问题归咎于消费者。他直言不讳，“有些女性的身材就是不适合我们的产品”。\n  尽管三天后，Wilson发布了道歉视频，但公众的不满已无法平息。随之而来的是财务与高层震荡，Wilson也迎来了“一生中最大的灾难”，被迫退出了董事会。\n  失焦与失守\n  Wilson走后，lululemon开始了一场漫长的“打补丁”运动。\n  供应链层面，公司重新筛选全球合作工厂并纳入研发体系，却始终未能摆脱对代工厂的深度依赖。为了保证毛利率，lululemon持续将产能向低成本的东南亚迁移，代价是品控体系日益薄弱。\n  产品创新上，lululemon死磕面料技术，却在经典款乏善可陈。近年来的新品，甚至一改往日的极简风格，转而采用“Logo-heavy”的设计语言。\n  更值得关注的是战略层面的改变。lululemon开始积极拥抱“政治正确”，启用大码模特，并全面拓展产品边界。\n",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "id": "b8dc8173d1569198",
+    "title": "AI家庭智能硬件公司获数千万元融资，首款产品今年上线海外｜硬氪首发",
+    "summary": "作者｜黄楠\n编辑｜袁斯来\n硬氪获悉，威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资。融资资金将主要用于AI算法底层技术研发、完善产品量产体系，以及全球化渠道布局和家庭AI生态的持续建设。\nMOVA LINCO核心团队来自头部网络通信与智能硬件企业，在路由器、NAS存储及AI算力设备等方面拥有深厚的技术积累与产品经验。公司产品矩阵以AI智能语音路由器、AI NAS及AI算力盒子三大品类为核心，构建“连接+存储+算力”三位一体的家庭AI基础设施架构，覆盖从智能家居中枢、数据存储及本地算力分配等全场景需求，专注为全球用户提供智能化、主动化的家庭AI服务体验。\n长期以来，路由器的定位颇为特殊。它在数字基础设施中承担着连接枢纽的关键职能，但又极少进入用户的日常感知。购置产品后，除短暂的配置环节外，这台设备常被隐藏在弱电箱或电视柜交流，极少能获取到用户的主动关注。但若出现网络中断，生活与工作的运转又会即刻受阻，其不可替代的刚需属性随即显现。\n这种“不可或缺、却近乎隐形”的状况，在过去二十年间几乎未有根本性改变。而基于这一连接枢纽属性，推动其成为家庭AI基",
+    "url": "https://36kr.com/p/3879780282495236?f=rss",
+    "publishedAt": "2026-07-13T03:00:00.000Z",
+    "language": "zh",
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "rawContent": "\n \n \n  作者｜黄楠\n  编辑｜袁斯来\n  硬氪获悉，威联机器人科技（深圳）有限公司（以下简称“MOVA LINCO”）近日完成数千万元天使融资。融资资金将主要用于AI算法底层技术研发、完善产品量产体系，以及全球化渠道布局和家庭AI生态的持续建设。\n  MOVA LINCO核心团队来自头部网络通信与智能硬件企业，在路由器、NAS存储及AI算力设备等方面拥有深厚的技术积累与产品经验。公司产品矩阵以AI智能语音路由器、AI NAS及AI算力盒子三大品类为核心，构建“连接+存储+算力”三位一体的家庭AI基础设施架构，覆盖从智能家居中枢、数据存储及本地算力分配等全场景需求，专注为全球用户提供智能化、主动化的家庭AI服务体验。\n  长期以来，路由器的定位颇为特殊。它在数字基础设施中承担着连接枢纽的关键职能，但又极少进入用户的日常感知。购置产品后，除短暂的配置环节外，这台设备常被隐藏在弱电箱或电视柜交流，极少能获取到用户的主动关注。但若出现网络中断，生活与工作的运转又会即刻受阻，其不可替代的刚需属性随即显现。\n  这种“不可或缺、却近乎隐形”的状况，在过去二十年间几乎未有根本性改变。而基于这一连接枢纽属性，推动其成为家庭AI基础设施布局中不可忽视的入口选项。\n  根据中商产业研究院数据，2025年，中国路由器行业市场规模已达262亿元。AI路由器的出现将进一步打开这一品类的想象空间。预计到2032年，全球AI路由器市场规模将增长至51亿美元以上，年复合增长率超过16%\n  MOVA LINCO总裁贾锌润告诉硬氪，“路由器是家庭中少数能同时满足持续在线联网、不间断供电、以无线方式连接各类智能IoT设备这三项条件的形态。对比之下，以往智能音箱、中控屏或电视等终端要实现对其他设备的管控，其通信链路同样需先经由路由器；一旦路由器出现故障，全屋智能网络即面临全面中断。”\n  基于这一观察，团队将首款落地产品聚焦于此，推出AI智能语音路由X1 Pro。\n  \n  MOVA LINCO AI智能语音路由X1 Pro（图源/企业）\n  X1 Pro最核心的变化在于交互方式。传统路由器通过APP完成所有操作，用户调整网络、管理设备等操作，都需要手动打开软件。MOVA LINCO在X1 Pro机身内置定制语音芯片与自研语音算法，支持自然模糊语音交互。\n  除了能识别开关网络、调节设备等标准指令外，X1 Pro还能理解用户日常表达背后的真实诉求，无需再使用固定唤醒词，用户直接口述需求，即可向全屋设备下发控制指令；比如让扫地机开始清扫、调整空调温度、拉开窗帘等，省去手动操作的冗长步骤。\n  在硬件配置上，为应对家庭场景的复杂度，X1 Pro支持全屋Mesh组网，覆盖大平层、复式等大面积住宅；同时，机身还配备四组2.5G高速有线网口，适配高清影音、本地素材传输等高流量场景。\n  作为连接枢纽，X1 Pro能实时获取全屋设备的数据信息，用户几点回家、空调开到多少度、窗帘什么时候拉开，大量数据都在本地化路由器这里汇聚。但贾锌润清楚，数据只是原料。要让家庭AI真正理解用户、主动服务，光有“连接”远远不够。数据需要被存储下来，形成对用户生活习惯的长期认知，并通过算力在本地完成处理。\n  此前，MOVA LINCO已在CES 2026上展出AI NAS UP6，这款产品定位为“家庭私有云”，解决用户家庭数据的存储与智能检索问题。UP6的机身自带一块6英寸2K触控屏，无需依赖手机或电脑即可完成配置和状态查看。\n  它支持自然语言检索，用户可以通过语音或文字指令，快速调取特定时间、地点或人物的照片与文件；同时可对摄像头录制的视频进行自动分类与智能识别，筛选出包含特定对象或事件的片段。\n  AI Box锚定产品矩阵的算力层，其定位是家庭的算力中心，根据不同设备需求分配计算资源，比如摄像头的人脸识别、扫地机的路径规划、语音指令的语义理解等任务，均可由AI Box统一承担。\n  \n  MOVA LINCO产品在AWE上展出（图源/企业）\n  三款产品各司其职。路由器负责连接，实时感知设备的在线状态与数据流；NAS负责存储，记录每一次操作、每一条语音指令、每一个使用习惯的痕迹；Box负责计算，在后台完成对用户行为的判断与响应。“连接、存储、算力三者缺一不可，协同起来才能让AI从被动响应走向主动服务，共同构成一套完整的家庭AI基础设施。”贾锌润说。\n  硬氪了解，MOVA LINCO AI智能路由器X1 Pro和AI NAS UP6预计2026年下旬正式在海外上线，国内版本将同步跟进。同时，依托深圳及大湾区的供应链集群优势，将为其量产与迭代提供基础支撑。\n  以下为硬氪与MOVA LINCO总裁贾锌润的访谈节选（略经编辑）：\n  硬氪：当前国内AI NAS品类与海外市场存在明显的结构",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "id": "f023ebfff74be4a8",
+    "title": "36氪首发 | 港中大博士、前大疆工程师创业消费级四足机器人，天使轮获正轩领投数千万元",
+    "summary": "作者 | 乔钰杰\n编辑 | 袁斯来\n硬氪获悉，深圳光之跃迁科技有限公司（Lumisition Robotics）（以下简称“光之跃迁”）近日完成近五千万元天使轮融资，由正轩领投，光点资本、力合资本、松禾资本、恒信未来等机构跟投。本轮资金将主要用于产品研发、算法迭代及量产准备。\n光之跃迁成立于2026年2月，聚焦消费级四足机器人市场，希望以“全地形移动底盘”切入户外场景，解决搬运、辅助行动等体力劳动需求。公司瞄准拥有独栋住宅的欧美家庭、户外运动爱好者以及银发群体，希望让四足机器人从展示型产品转向具备实际生产力的消费级工具。\n\n（图源/企业）\n公司创始人兼CEO乐林株毕业于香港中文大学机器人专业，拥有机器人博士及博士后背景，是香港中文大学LRL Lab联合创立人，曾任大疆创新研发骨干，并曾联合创办B端四足机器人企业光年创新科技。\nCTO与硬件VP均毕业于香港中文大学机器人专业。CTO本科为浙大竺可桢学院，专注强化学习与运动控制算法。硬件VP为华中科技大学本硕（师从高亮教授），曾任石头科技工程师，发表IEEE/ASME TMECH、IROS、ICRA论文5篇，持发明专利7项，主导5+款关节电",
+    "url": "https://36kr.com/p/3893473722514181?f=rss",
+    "publishedAt": "2026-07-13T02:47:38.000Z",
+    "language": "zh",
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "rawContent": "\n \n \n  作者&nbsp;|&nbsp;乔钰杰\n  编辑&nbsp;|&nbsp;袁斯来\n  硬氪获悉，深圳光之跃迁科技有限公司（Lumisition Robotics）（以下简称“光之跃迁”）近日完成近五千万元天使轮融资，由正轩领投，光点资本、力合资本、松禾资本、恒信未来等机构跟投。本轮资金将主要用于产品研发、算法迭代及量产准备。\n  光之跃迁成立于2026年2月，聚焦消费级四足机器人市场，希望以“全地形移动底盘”切入户外场景，解决搬运、辅助行动等体力劳动需求。公司瞄准拥有独栋住宅的欧美家庭、户外运动爱好者以及银发群体，希望让四足机器人从展示型产品转向具备实际生产力的消费级工具。\n  \n  （图源/企业）\n  公司创始人兼CEO乐林株毕业于香港中文大学机器人专业，拥有机器人博士及博士后背景，是香港中文大学LRL Lab联合创立人，曾任大疆创新研发骨干，并曾联合创办B端四足机器人企业光年创新科技。\n  CTO与硬件VP均毕业于香港中文大学机器人专业。CTO本科为浙大竺可桢学院，专注强化学习与运动控制算法。硬件VP为华中科技大学本硕（师从高亮教授），曾任石头科技工程师，发表IEEE/ASME TMECH、IROS、ICRA论文5篇，持发明专利7项，主导5+款关节电机、大型液压人形机器人及多款四足机器人平台研发。\n  创始人乐林株向硬氪表示，与部分消费机器人强调陪伴、情绪价值不同，光之跃迁更关注真实场景中的“体力替代”。例如在欧美家庭中，独栋住宅面积较大，居民经常需要完成车库到住宅、停车场到家门口等“最后一公里”搬运任务；同时，老龄化趋势加剧、护理成本上升以及劳动力短缺，也催生了户外移动辅助设备的市场需求。围绕不同需求，光之跃迁计划推出城市、轻城市、户外级等适应不同地形的产品。\n  \n  （图源/企业）\n  围绕“全地形辅助”这一定位，光之跃迁构建了四层智能架构，包括感知智能、运动智能、意图智能和角色智能。感知层负责环境信息获取；运动层基于团队多年强化学习（RL）运控研究，实现复杂地形下的稳定运动与越障；意图层通过Agent技术理解用户复杂指令和行为偏好，例如在速度优先或安全优先之间进行自主决策；角色层则能够根据场景动态切换运输工具、营地助手、守护者或家庭伙伴等不同功能，并支持模块化改装，例如安装座椅后变为智能轮椅，或扩展为婴儿车等形态。\n  技术路线方面，公司持续布局面向户外场景的基础模型和数据体系。创始人介绍，目前行业普遍缺乏覆盖复杂非结构化环境的数据集，而四足机器人在运动过程中能够直接获取地面摩擦力、刚度等丰富物理信息，因此既是移动平台，也是天然的数据采集终端。随着部署规模扩大，公司希望逐步形成覆盖户外场景的数据飞轮，构建长期竞争壁垒。\n  除了算法研发，光之跃迁还将硬件降本作为产品落地的重要策略。在硬件设计上，公司强调以算法驱动研发优化，例如通过多学科优化算法重构关节模组设计，将约18个零部件精简至11个，在降低制造与装配成本的同时缩短研发迭代周期。导航系统则采用低成本摄像头与激光雷达组合，并结合模型蒸馏等技术降低算力需求，减少对高性能硬件的依赖。\n  乐林株表示，公司的成本控制并非依赖单一环节，而是覆盖产品设计、零部件选型、传感器配置、导航方案和模型部署等全链路的系统性优化，在保证性能的前提下充分发挥国内供应链优势，以实现更具竞争力的产品定价。\n  目前，光之跃迁已完成样机开发并进入测试阶段。按照规划，公司计划于今年10月开展为期三天的户外徒步直播测试，并预计于2027年CES展会上正式对外发布产品，2027年4月至5月启动量产。\n  以下为硬氪与创始人乐林株访谈节选：\n  硬氪：为什么选择面向C端的四足狗作为这次创业的切入点？\n  乐林株：选择四足机器人作为切入方向，一方面源于团队长期的技术积累。核心成员来自香港中文大学机器人实验室，曾参与开发多款四足机器人和人形机器人，在全栈硬件、运动控制、导航算法等方面拥有较深的研发基础。\n  我们认为消费级四足机器人市场仍存在明确的差异化机会。目前多数产品强调陪伴、展示或情绪价值，我们把自身定位为全地形移动底盘 / 户外智能伙伴, 解决搬运、辅助行动等真实需求, 帮用户完成户外场景中的体力劳动，做的是增强人的能力, 而不是替代人。\n  这一定位与我们的目标人群高度吻合。我们的核心用户是有独栋、有院子、习惯露营/打猎/DIY、并且倾向主动寻找工具来增强自己的人群，他们天然属于海外的“车库文化” (Garage Culture) 与 DIY 改装生态。对这群人， 产品不是一个被动的陪伴物，而是一件能被他们改装、扩展、据为己用的装备。\n  我们希望机器人成为一个能扩展用户能力边界的平台: 通过模块化改装支持多种应用形态，运输工具、露营助手、辅助出行设备等。目标始终是增强人，而非取代",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "id": "974759825ca162a6",
+    "title": "对话Om AI赵天成：多年坚守，押注物理AI原生的「流式」未来",
+    "summary": "一个从未见过监控画面的多模态模型，却比在监控数据上练了多年的小模型“老将”更懂监控。这不是科幻电影，这是2023年Om AI联汇的一场“无心插柳”，也是CEO兼首席科学家赵天成博士更加坚信“多模态训练方式能为物理开放世界带来泛化性”的关键节点。彼时，AI行业正在追求以大语言模型为核心的生成式AI。\n三年后，这个多模态模型演变成了VLX——全球首个面向物理AI的端侧流式多模态模型系列。首次提出“端侧原生流式多模态”这一全新模型架构，而通过这个从Day 1为端侧算力约束设计的架构，VLX模型首次在端侧打通“持续感知+精准定位+行动决策”的物理AI完整闭环。\n\nVLX概览图\n毫无疑问，站在2026年夏天的时间节点，AI行业的热度已经开始从数字AI转向物理AI。不同于数字AI的2023年，虽然物理AI的热度很高，但是行业仍未收敛，多路线并存，距生产落地尚远：以语言为中心的VLA、以像素为中心的视频生成、以3D结构为中心的仿真、以视觉表征为中心的JEPA……行业对最主流的VLA与世界模型两条概念路线的选择，也依然摇摆不定，是替代，还是并存，抑或是融合？\n就在这一行业还在争论谁是物理AI终极答案之",
+    "url": "https://36kr.com/p/3893445208717826?f=rss",
+    "publishedAt": "2026-07-13T02:39:18.000Z",
+    "language": "zh",
+    "sourceId": "36kr",
+    "sourceType": "36kr",
+    "rawContent": "\n \n \n  一个从未见过监控画面的多模态模型，却比在监控数据上练了多年的小模型“老将”更懂监控。这不是科幻电影，这是2023年Om AI联汇的一场“无心插柳”，也是CEO兼首席科学家赵天成博士更加坚信“多模态训练方式能为物理开放世界带来泛化性”的关键节点。彼时，AI行业正在追求以大语言模型为核心的生成式AI。\n  三年后，这个多模态模型演变成了VLX——全球首个面向物理AI的端侧流式多模态模型系列。首次提出“端侧原生流式多模态”这一全新模型架构，而通过这个从Day 1为端侧算力约束设计的架构，VLX模型首次在端侧打通“持续感知+精准定位+行动决策”的物理AI完整闭环。\n  \n  VLX概览图\n  毫无疑问，站在2026年夏天的时间节点，AI行业的热度已经开始从数字AI转向物理AI。不同于数字AI的2023年，虽然物理AI的热度很高，但是行业仍未收敛，多路线并存，距生产落地尚远：以语言为中心的VLA、以像素为中心的视频生成、以3D结构为中心的仿真、以视觉表征为中心的JEPA……行业对最主流的VLA与世界模型两条概念路线的选择，也依然摇摆不定，是替代，还是并存，抑或是融合？\n  就在这一行业还在争论谁是物理AI终极答案之时，Om AI联汇的VLX系列模型已然完成物理AI从仿真实验到产业落地的商业闭环，通过赋予机器人、无人机、可穿戴设备、安防摄像头、AI PC等多类物理终端自主感知的“小脑”和认知决策的“大脑”，让这些物理终端实现从“被动执行指令”向“主动适应场景”跨越。\n  \n  VLX架构图\n  这并非偶然，而是Om AI联汇多年漫长专注后的必然结果。\n  2019年，当赵天成从CMU语言技术所博士毕业时，他的履历足够耀眼：所在实验室导师Maxine Eskenazi是对话系统的开山鼻祖，90年代做出了全球第一个实用化对话智能体；而他本人是实验室第三代系统的缔造者，2016年就率先用神经网络将延续了20年的系统改造成端到端生成式模型。当时进入学术圈当教授、大厂，几乎唾手可得。\n  但他选了第三条路——创业。而且是一条在当时几乎无人理解的路线：不做纯文本大模型，不追生成式AI的热潮，而是死磕“视觉+语言”的流式多模态。即便是当下，这也并非主流的技术路线。行业的主流叙事是“离线抽帧”：视频就是一帧一帧截出来当图片处理，推理是批量的、离散的、一问一答的。而赵天成从一开始就要做的是“流式”：视频像水流一样持续进入模型，AI自己一直在看，不用等人提问。\n  \n  Flow推理速度优势\n  这是赵天成自己的判断。在CMU期间，他经历了雅虎10亿美金的多模态智能体项目，“那让我意识到多模态的价值上限会高很多，它就真的让你感觉这是一个活物，而不只是一个对话的系统。”回国后，他没有跟风当时国内AI公司扎堆的生成式对话模型赛道，而是坚定地把视觉和语言融合在一起，“这两个是主模态，至少90%的物理信息都覆盖掉了。”\n  五年里，从文本生成到文生图，从VLA到世界模型，AI赛道换了三四轮“当红炸子鸡”。2023年语言模型大火，有人曾拉他说“你以前不也搞语言模型的，为什么不出来做？”每一轮都有资本和同行劝他“转个方向更快变现”。\n  “我们的东西，在物理AI之前一直没有成为最火的东西。”赵天成坦言，“一直会有更火的东西摆在前面。”团队里也有小伙伴信心动摇，有人离开，但更多核心伙伴留了下来。留下来的这群人，多年如一日，始终围绕“V和L”这两个点持续产出。\n  五年后的今天，AI行业喊着要从“云端”回到“地面”，要深入产业，并真正产生价值，物理AI成为最热门的概念：2026年上半年，全球物理AI领域仅一季度融资就超过64亿美元；物理AI也开始多场景落地，工业机器人智能化升级、自动驾驶城市NOA大规模普及等端侧智能终端快速渗透……但在物理AI这场浪潮中，VLX系列模型是为数不多的，跑在端侧的流式多模态模型。它回答着一个根本问题：物理世界的AI，到底需要什么架构？\n  VLX系列模型是少数把三个闭环都跑通的公司：模型闭环，让VLX的Flow+Seek+Go在感知—定位—行动上自成一体，不是三个独立模型，是同一条视频流上不可分割的三个能力层；数据闭环，让百万级摄像头、无人机、机器人等真实业务场景持续回流端侧数据，反哺模型迭代；商业闭环，完成PMF，公司营收以亿为单位。\n  \n  VLX三层定义\n  当产业的需求曲线与技术的积累曲线在2026年交汇，一场“长期主义与产业拐点的双向奔赴”也正式上演。而当物理AI终于从“概念炒作期”迈入“场景验证期”，赵天成和他的团队反而显得从容。这不是一个追风者的故事，而是一个关于判断力、定力，以及用多年时间验证的一个“反共识”判断的商业样本。\n  以下是36氪和赵天成对谈，对话经过编辑：\n  \n  Om AI联汇CEO兼首席科学家",
+    "rawContentType": "news",
+    "metadata": {
+      "category": "AI"
+    }
+  },
+  {
+    "id": "e162ad673458d7ff",
+    "title": "有没有一种「落后」的生活方式，仔细想后竟让人有点羡慕？",
+    "summary": "加入圈子，瓜分80000盐粒这里是「拒绝使用 AI 的人类」临时集合地，也是人类树洞——在这里，笨拙比流畅珍贵，错别字比通顺可爱。拒绝AI的我们",
+    "url": "https://www.zhihu.com/question/2057919283821278700",
+    "publishedAt": "2026-07-07T12:09:51.000Z",
+    "language": "zh",
+    "sourceId": "zhihu",
+    "sourceType": "zhihu",
+    "rawContent": "加入圈子，瓜分80000盐粒这里是「拒绝使用 AI 的人类」临时集合地，也是人类树洞——在这里，笨拙比流畅珍贵，错别字比通顺可爱。拒绝AI的我们",
+    "rawContentType": "news",
+    "metadata": {
+      "heat": "201 万热度",
+      "answerCount": 68
+    }
+  },
+  {
+    "id": "16f46c43c9b52128",
+    "title": "如何看待FIFA主席正式确认世界杯将考虑扩至64支球队：每个国家都应该有机会参加世界杯？",
+    "summary": "https://mbd.baidu.com/newspage/data/landingshare?id=1870502764516255683&wfr=spider&for=pc&searchword=%E4%B8%96%E7%95%8C%E6%9D%AF%E8%80%83%E8%99%91%E6%89%A9%E8%87%B364%E6%94%AF%E7%90%83%E9%98%9F&third=baijiahao&baijiahao_id=1870502764516255683&c_source=kunlun&c_score=0.999000&p_tk=6023ZeBmoIYkNJCeUhs",
+    "url": "https://www.zhihu.com/question/2059874675564591000",
+    "publishedAt": "2026-07-12T21:39:53.000Z",
+    "language": "zh",
+    "sourceId": "zhihu",
+    "sourceType": "zhihu",
+    "rawContent": "https://mbd.baidu.com/newspage/data/landingshare?id=1870502764516255683&wfr=spider&for=pc&searchword=%E4%B8%96%E7%95%8C%E6%9D%AF%E8%80%83%E8%99%91%E6%89%A9%E8%87%B364%E6%94%AF%E7%90%83%E9%98%9F&third=baijiahao&baijiahao_id=1870502764516255683&c_source=kunlun&c_score=0.999000&p_tk=6023ZeBmoIYkNJCeUhsoGJ1VQyXqAxzcuCz1RtAx2DX%2FmLB5vlpm5ncxovLd3Hnz3w4b7NrCCAPwdMSL4PtzyRfqj5FJoOZv8TuQtTPnEOf%2BiX0TxTZSYWSEZjdbLoZJyHXa%2BYXrE%2FFGTJcgYOWU6PMemRUWQL%2FIuMeHAv6%2BK3CqTJU%3D&p_timestamp=1783892073&p_sign=539bc3b0a760e7971b0858abf396dc1b&p_signature=1207e1bafc7343ab57f6e96592f46780&__pc2ps_ab=6023ZeBmoIYkNJCeUhsoGJ1VQyXqAxzcuCz1RtAx2DX%2FmLB5vlpm5ncxovLd3Hnz3w4b7NrCCAPwdMSL4PtzyRfqj5FJoOZv8TuQtTPnEOf%2BiX0TxTZSYWSEZjdbLoZJyHXa%2BYXrE%2FFGTJcgYOWU6PMemRUWQL%2FIuMeHAv6%2BK3CqTJU%3D|1783892073|1207e1bafc7343ab57f6e96592f46780|539bc3b0a760e7971b0858abf396dc1b",
+    "rawContentType": "news",
+    "metadata": {
+      "heat": "110 万热度",
+      "answerCount": 76
+    }
+  },
+  {
+    "id": "ae7ad9cfbf96ae64",
+    "title": "马斯克再出狂言，称其目标是让 SpaceX 价值超过整个地球，如何理解他的这一目标？",
+    "summary": "IT之家7 月 11 日消息，SpaceX CEO 埃隆 · 马斯克多年来一直靠向投资者描绘科幻式未来，为自己的商业计划争取资金。马斯克 10 日更是在一条推文中口出狂言：“如果我们实现目标，SpaceX 的价值将超过地球上其余一切的总和。” 马斯克发表上述言论，是为了回应一名支持者对SpaceX 与 Anthropic 最新 AI 算力协议的质疑。对方认为，SpaceX 把太多资金交给了一家竞争对手。 马斯克再出狂言：目标让 spacex 价值超过整个地球",
+    "url": "https://www.zhihu.com/question/2059280313839366400",
+    "publishedAt": "2026-07-11T06:18:06.000Z",
+    "language": "zh",
+    "sourceId": "zhihu",
+    "sourceType": "zhihu",
+    "rawContent": "IT之家7 月 11 日消息，SpaceX CEO 埃隆 · 马斯克多年来一直靠向投资者描绘科幻式未来，为自己的商业计划争取资金。马斯克 10 日更是在一条推文中口出狂言：“如果我们实现目标，SpaceX 的价值将超过地球上其余一切的总和。” 马斯克发表上述言论，是为了回应一名支持者对SpaceX 与 Anthropic 最新 AI 算力协议的质疑。对方认为，SpaceX 把太多资金交给了一家竞争对手。 马斯克再出狂言：目标让 spacex 价值超过整个地球",
+    "rawContentType": "news",
+    "metadata": {
+      "heat": "100 万热度",
+      "answerCount": 36
+    }
+  },
+  {
+    "id": "4ade7440ca92d200",
+    "title": "Simple Benchmark Review: Ollama on Jetson Nano",
+    "summary": "Previous Related Post: Part 1      This particular rabbit hole was created due to a previous...",
+    "url": "https://dev.to/annavi11arrea1/simple-benchmark-review-ollama-on-jetson-nano-5gee",
+    "publishedAt": "2026-07-12T05:43:01.000Z",
+    "language": "en",
+    "sourceId": "devto",
+    "sourceType": "devto",
+    "rawContent": "Previous Related Post: Part 1      This particular rabbit hole was created due to a previous...",
+    "rawContentType": "article",
+    "metadata": {
+      "reactionsCount": 13,
+      "tags": [
+        "ai",
+        "webdev",
+        "nvidia",
+        "productivity"
+      ],
+      "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fa2vq7v2wcc6jon4u5xgq.png"
+    }
+  },
+  {
+    "id": "aa0e2e3304e623c1",
+    "title": "I Built a Monitor for Servers. Then Pointed It at Myself.",
+    "summary": "This is a submission for Weekend Challenge: Passion Edition           What I Built   I'm in Port...",
+    "url": "https://dev.to/dannwaneri/i-built-a-monitor-for-servers-then-pointed-it-at-myself-g5",
+    "publishedAt": "2026-07-13T01:22:10.000Z",
+    "language": "en",
+    "sourceId": "devto",
+    "sourceType": "devto",
+    "rawContent": "This is a submission for Weekend Challenge: Passion Edition           What I Built   I'm in Port...",
+    "rawContentType": "article",
+    "metadata": {
+      "reactionsCount": 14,
+      "tags": [
+        "devchallenge",
+        "weekendchallenge",
+        "ai"
+      ],
+      "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F0kjvybwxfnlc7tlljgo5.jpg"
+    }
+  },
+  {
+    "id": "2fe07ea5da212330",
+    "title": "Commit Chronicles—Your Obsession Leaves a Trail. Mine Gives It a Plot.",
+    "summary": "Snowflake fetches a repo's commit history, finds the one story in it with plain SQL, and narrates that single thread with Cortex. Six storylines. One card.",
+    "url": "https://dev.to/anchildress1/commit-chronicles-your-obsession-leaves-a-trail-mine-gives-it-a-plot-h8j",
+    "publishedAt": "2026-07-12T18:46:37.000Z",
+    "language": "en",
+    "sourceId": "devto",
+    "sourceType": "devto",
+    "rawContent": "Snowflake fetches a repo's commit history, finds the one story in it with plain SQL, and narrates that single thread with Cortex. Six storylines. One card.",
+    "rawContentType": "article",
+    "metadata": {
+      "reactionsCount": 9,
+      "tags": [
+        "devchallenge",
+        "weekendchallenge",
+        "snowflake",
+        "ai"
+      ],
+      "coverImage": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fcfu2d4wuogdxvxofu8tz.png"
+    }
+  },
+  {
+    "id": "5b619bf16f316f8d",
+    "title": "langchain-ai/langchain: Build context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.",
+    "summary": "Build context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.",
+    "url": "https://github.com/langchain-ai/langchain",
+    "publishedAt": "2026-07-10T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "github",
+    "sourceType": "github",
+    "rawContent": "langchain-ai/langchain\nBuild context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.\nStars: 95000 Forks: 15500 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 95000,
+      "forks": 15500,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "id": "a5deb0c82f9a661f",
+    "title": "crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.",
+    "summary": "Framework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "github",
+    "sourceType": "github",
+    "rawContent": "crewAIInc/crewAI\nFramework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.\nStars: 28000 Forks: 3900 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 28000,
+      "forks": 3900,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "id": "c26f4c95e9da60f4",
+    "title": "ggerganov/llama.cpp: LLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.",
+    "summary": "LLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.",
+    "url": "https://github.com/ggerganov/llama.cpp",
+    "publishedAt": "2026-07-08T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "github",
+    "sourceType": "github",
+    "rawContent": "ggerganov/llama.cpp\nLLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.\nStars: 68000 Forks: 9700 Language: C++",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 68000,
+      "forks": 9700,
+      "repoLanguage": "C++"
+    }
+  },
+  {
+    "id": "6d7204b2fb73ec32",
+    "title": "microsoft/autogen: Enable Next-Gen Large Language Model Applications via multi-agent conversation framework.",
+    "summary": "Enable Next-Gen Large Language Model Applications via multi-agent conversation framework.",
+    "url": "https://github.com/microsoft/autogen",
+    "publishedAt": "2026-07-11T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "github",
+    "sourceType": "github",
+    "rawContent": "microsoft/autogen\nEnable Next-Gen Large Language Model Applications via multi-agent conversation framework.\nStars: 35000 Forks: 5100 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 35000,
+      "forks": 5100,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "id": "082fbcfbafb921da",
+    "title": "All-Hands-AI/OpenHands: Open-source autonomous coding agent. Write code, run commands, browse the web, and more.",
+    "summary": "Open-source autonomous coding agent. Write code, run commands, browse the web, and more.",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "publishedAt": "2026-07-07T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "github",
+    "sourceType": "github",
+    "rawContent": "All-Hands-AI/OpenHands\nOpen-source autonomous coding agent. Write code, run commands, browse the web, and more.\nStars: 42000 Forks: 4600 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 42000,
+      "forks": 4600,
+      "repoLanguage": "Python"
+    }
+  },
+  {
+    "id": "38983697b490b746",
+    "title": "huggingface/transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.",
+    "summary": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.",
+    "url": "https://github.com/huggingface/transformers",
+    "publishedAt": "2026-07-06T00:00:00.000Z",
+    "language": "en",
+    "sourceId": "github",
+    "sourceType": "github",
+    "rawContent": "huggingface/transformers\nState-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.\nStars: 132000 Forks: 26000 Language: Python",
+    "rawContentType": "readme",
+    "metadata": {
+      "stars": 132000,
+      "forks": 26000,
+      "repoLanguage": "Python"
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "langchain-ai/langchain",
+    "description": "Build context-aware reasoning applications with LLMs. Production-ready framework for building agents, RAG, and complex LLM applications.",
+    "url": "https://github.com/langchain-ai/langchain",
+    "stars": 95000,
+    "forks": 15500,
+    "language": "Python",
+    "publishedAt": "2026-07-10T00:00:00.000Z",
+    "trendingReason": "本周新增 Star 1200+,LLM 应用框架持续热门"
+  },
+  {
+    "repo": "crewAIInc/crewAI",
+    "description": "Framework for orchestrating role-playing, autonomous AI agents. Multi-agent collaboration with customizable roles and tasks.",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "stars": 28000,
+    "forks": 3900,
+    "language": "Python",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "trendingReason": "多 Agent 协作框架,本周活跃度上升 40%"
+  },
+  {
+    "repo": "ggerganov/llama.cpp",
+    "description": "LLM inference in C/C++ with minimal dependencies. Run large language models locally on CPU and GPU.",
+    "url": "https://github.com/ggerganov/llama.cpp",
+    "stars": 68000,
+    "forks": 9700,
+    "language": "C++",
+    "publishedAt": "2026-07-08T00:00:00.000Z",
+    "trendingReason": "本地推理标杆,新增多模态支持"
+  },
+  {
+    "repo": "microsoft/autogen",
+    "description": "Enable Next-Gen Large Language Model Applications via multi-agent conversation framework.",
+    "url": "https://github.com/microsoft/autogen",
+    "stars": 35000,
+    "forks": 5100,
+    "language": "Python",
+    "publishedAt": "2026-07-11T00:00:00.000Z",
+    "trendingReason": "微软多 Agent 框架,发布 v0.4 大版本更新"
+  },
+  {
+    "repo": "All-Hands-AI/OpenHands",
+    "description": "Open-source autonomous coding agent. Write code, run commands, browse the web, and more.",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "stars": 42000,
+    "forks": 4600,
+    "language": "Python",
+    "publishedAt": "2026-07-07T00:00:00.000Z",
+    "trendingReason": "开源自主编码 Agent,本周 Star 增长 800+"
+  },
+  {
+    "repo": "huggingface/transformers",
+    "description": "State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. Thousands of pretrained models for NLP, vision, audio.",
+    "url": "https://github.com/huggingface/transformers",
+    "stars": 132000,
+    "forks": 26000,
+    "language": "Python",
+    "publishedAt": "2026-07-06T00:00:00.000Z",
+    "trendingReason": "Transformer 库持续更新,新增对最新模型架构支持"
+  }
+]

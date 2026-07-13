@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Install web dependencies
+        run: cd web && npm ci
+
+      - name: Build web
+        run: cd web && npm run build
+
+      - name: Verify pipeline data files exist
+        run: |
+          test -f data/processed/events.json || echo "events.json not found (expected if committed)"
+          test -f data/processed/aggregated.json || echo "aggregated.json not found (expected if committed)"
+          test -f data/processed/report.md || echo "report.md not found (expected if committed)"

@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-07-12",
+  "description": "AI 舆情分析日报系统 - 数据源配置与选择理由",
+  "sources": [
+    {
+      "id": "hf_papers",
+      "name": "HuggingFace Daily Papers",
+      "category": "official-paper",
+      "language": "en",
+      "type": "realtime",
+      "endpoint": "https://huggingface.co/api/daily_papers",
+      "needsProxy": true,
+      "fields": ["paper.id", "paper.title", "paper.summary", "paper.authors", "paper.publishedAt"],
+      "reason": "人工+社区策展的每日热门论文,质量高于 arXiv 原始流,契合'日报'定位",
+      "extractionStrategy": "取每日前 3-5 篇,rawContentType=abstract",
+      "selected": true
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "category": "media",
+      "language": "en",
+      "type": "realtime",
+      "endpoint": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "needsProxy": true,
+      "fields": ["title", "link", "dc:creator", "pubDate", "category", "description"],
+      "reason": "创投产业视角,与中文 36氪对照,舆情分析价值高于 The Verge 消费视角",
+      "extractionStrategy": "取最新 3-4 篇,rawContentType=article",
+      "selected": true
+    },
+    {
+      "id": "36kr",
+      "name": "36氪",
+      "category": "media",
+      "language": "zh",
+      "type": "realtime",
+      "endpoint": "https://36kr.com/feed",
+      "needsProxy": false,
+      "fields": ["title", "link", "pubDate", "description"],
+      "reason": "实测可用的中文 RSS,覆盖产业资本视角,最新 2026-07-12 Claude 相关文章",
+      "extractionStrategy": "过滤 AI 相关(关键词匹配),取 3-4 篇,rawContentType=news",
+      "selected": true
+    },
+    {
+      "id": "zhihu",
+      "name": "知乎热榜",
+      "category": "community",
+      "language": "zh",
+      "type": "realtime",
+      "endpoint": "https://api.zhihu.com/topstory/hot-list?limit=50",
+      "needsProxy": false,
+      "fields": ["target.title", "target.excerpt", "target.url", "detail_text(热度)", "target.answer_count"],
+      "reason": "中文社区热度核心佐证,API 实测可用,关键词过滤 AI 相关问题",
+      "extractionStrategy": "关键词过滤(AI/人工智能/大模型/LLM/GPT/Claude/机器学习),取 2-3 条,rawContentType=news",
+      "selected": true
+    },
+    {
+      "id": "devto",
+      "name": "Dev.to",
+      "category": "community",
+      "language": "en",
+      "type": "realtime",
+      "endpoint": "https://dev.to/api/articles?tag=ai&per_page=10",
+      "needsProxy": false,
+      "fields": ["title", "description", "url", "published_timestamp", "tags", "cover_image", "public_reactions_count"],
+      "reason": "免 key、AI 专属标签、字段最丰富,替代被 block 的 Reddit",
+      "extractionStrategy": "取 2-3 篇,rawContentType=article",
+      "selected": true
+    },
+    {
+      "id": "hn",
+      "name": "Hacker News (Algolia)",
+      "category": "aggregator",
+      "language": "en",
+      "type": "realtime",
+      "endpoint": "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=AI&hitsPerPage=10",
+      "needsProxy": false,
+      "fields": ["title", "story_text", "url", "points", "num_comments", "created_at"],
+      "reason": "比 Firebase API 更好用,支持全文搜索,社区讨论质量高",
+      "extractionStrategy": "过滤 score>50,取 2-3 条,rawContentType=discussion",
+      "selected": true
+    },
+    {
+      "id": "github",
+      "name": "GitHub Trending",
+      "category": "official-opensource",
+      "language": "en",
+      "type": "static",
+      "endpoint": "data/raw/github.json",
+      "needsProxy": false,
+      "fields": ["repo", "description", "stars", "forks", "language"],
+      "reason": "非官方 API 不稳定,静态化保证可复现。手动整理近期热门 AI 仓库",
+      "extractionStrategy": "取 4-6 个,rawContentType=readme",
+      "selected": true
+    }
+  ],
+  "rejectedSources": [
+    { "id": "arxiv", "reason": "HuggingFace Daily Papers 已覆盖论文维度,arXiv 原始流信息密度低,冗余" },
+    { "id": "reddit", "reason": "未认证请求被 policy block,需 OAuth,24h 内不划算" },
+    { "id": "quora", "reason": "Cloudflare 挑战页,需浏览器 JS" },
+    { "id": "jiqizhixin", "reason": "返回反爬拦截页" },
+    { "id": "qbitai", "reason": "403 Forbidden" },
+    { "id": "rsshub-public", "reason": "官方限制,不能用作生产源" },
+    { "id": "producthunt", "reason": "需 OAuth2,认证流程耗时" },
+    { "id": "semantic-scholar", "reason": "429 限流,需申请 key" },
+    { "id": "theverge", "reason": "偏消费科技,产业视角价值不如 TechCrunch" },
+    { "id": "lobsters", "reason": "API 可用但 AI 内容稀少" }
+  ],
+  "targetCount": {
+    "total": "18-22",
+    "en": "~12",
+    "zh": "~8"
+  }
+}
